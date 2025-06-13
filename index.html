@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Ch4ir</title>
+  <title>Twitch Embed</title>
   <script src="https://player.twitch.tv/js/embed/v1.js"></script>
   <style>
     html, body {
@@ -20,9 +20,10 @@
 <body>
   <div id="twitch-embed"></div>
   <script>
-    var channelName = "CHANNEL_NAME"; 
+    const urlParams = new URLSearchParams(window.location.search);
+    const channelName = urlParams.get('channel') || 'dotatv247';
 
-    var player = new Twitch.Player("twitch-embed", {
+    const player = new Twitch.Player("twitch-embed", {
       width: "100%",
       height: "100%",
       channel: channelName,
@@ -30,19 +31,32 @@
       parent: ["safelogj.github.io"]
     });
 
-    player.addEventListener(Twitch.Player.PLAY, () => AndroidInterface.onEvent("play"));
-    player.addEventListener(Twitch.Player.PAUSE, () => AndroidInterface.onEvent("pause"));
-    player.addEventListener(Twitch.Player.MUTE, () => AndroidInterface.onEvent("mute"));
-    player.addEventListener(Twitch.Player.UNMUTE, () => AndroidInterface.onEvent("unmute"));
-    player.addEventListener(Twitch.Player.READY, () => AndroidInterface.onEvent("ready"));
-    player.addEventListener(Twitch.Player.ENDED, () => AndroidInterface.onEvent("ended"));
-    player.addEventListener(Twitch.Player.ONLINE, () => AndroidInterface.onEvent("online"));
-    player.addEventListener(Twitch.Player.OFFLINE, () => AndroidInterface.onEvent("offline"));
-    player.addEventListener(Twitch.Player.SEEK, () => AndroidInterface.onEvent("seek"));
-    player.addEventListener(Twitch.Player.PLAYBACK_BLOCKED, () => AndroidInterface.onEvent("blocked"));
-    player.addEventListener(Twitch.Player.AD_STARTED, () => AndroidInterface.onEvent("ad_started"));
-    player.addEventListener(Twitch.Player.AD_ENDED, () => AndroidInterface.onEvent("ad_ended"));
-    player.addEventListener(Twitch.Player.VIDEO_READY, () => AndroidInterface.onEvent("video_ready"));
+    const events = {
+      play: "play",
+      pause: "pause",
+      mute: "mute",
+      unmute: "unmute",
+      ready: "ready",
+      ended: "ended",
+      online: "online",
+      offline: "offline",
+      seek: "seek",
+      playback_blocked: "blocked",
+      ad_started: "ad_started",
+      ad_ended: "ad_ended",
+      video_ready: "video_ready"
+    };
+
+    for (const [key, value] of Object.entries(events)) {
+      const eventKey = Twitch.Player[key.toUpperCase()];
+      if (eventKey) {
+        player.addEventListener(eventKey, () => {
+          if (window.AndroidInterface && AndroidInterface.onEvent) {
+            AndroidInterface.onEvent(value);
+          }
+        });
+      }
+    }
   </script>
 </body>
 </html>
