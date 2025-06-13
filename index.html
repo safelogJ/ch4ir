@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ch4ir</title>
+  <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    #twitch-embed {
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <div id="twitch-embed"></div>
+  <script>
+    var channelName = "CHANNEL_NAME"; 
+
+    var player = new Twitch.Player("twitch-embed", {
+      width: "100%",
+      height: "100%",
+      channel: channelName,
+      autoplay: true,
+      parent: ["safelogj.github.io"]
+    });
+
+    player.addEventListener(Twitch.Player.PLAY, () => AndroidInterface.onEvent("play"));
+    player.addEventListener(Twitch.Player.PAUSE, () => AndroidInterface.onEvent("pause"));
+    player.addEventListener(Twitch.Player.MUTE, () => AndroidInterface.onEvent("mute"));
+    player.addEventListener(Twitch.Player.UNMUTE, () => AndroidInterface.onEvent("unmute"));
+    player.addEventListener(Twitch.Player.READY, () => AndroidInterface.onEvent("ready"));
+    player.addEventListener(Twitch.Player.ENDED, () => AndroidInterface.onEvent("ended"));
+    player.addEventListener(Twitch.Player.ONLINE, () => AndroidInterface.onEvent("online"));
+    player.addEventListener(Twitch.Player.OFFLINE, () => AndroidInterface.onEvent("offline"));
+    player.addEventListener(Twitch.Player.SEEK, () => AndroidInterface.onEvent("seek"));
+    player.addEventListener(Twitch.Player.PLAYBACK_BLOCKED, () => AndroidInterface.onEvent("blocked"));
+    player.addEventListener(Twitch.Player.AD_STARTED, () => AndroidInterface.onEvent("ad_started"));
+    player.addEventListener(Twitch.Player.AD_ENDED, () => AndroidInterface.onEvent("ad_ended"));
+    player.addEventListener(Twitch.Player.VIDEO_READY, () => AndroidInterface.onEvent("video_ready"));
+  </script>
+</body>
+</html>
