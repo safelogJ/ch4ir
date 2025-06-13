@@ -40,8 +40,8 @@
 
     player.addEventListener(Twitch.Player.READY, function() {
       window.playerReady = true;
-      if (window.AndroidInterface && AndroidInterface.onEvent) {
-        AndroidInterface.onEvent('ready');
+      if (window.AndroidInterface && window.AndroidInterface.onEvent) {
+        window.AndroidInterface.onEvent('ready');
       }
     });
 
@@ -54,18 +54,17 @@
       online: "online",
       offline: "offline",
       seek: "seek",
-      playback_blocked: "blocked",
+      playback_blocked: "playback_blocked",
       ad_started: "ad_started",
-      ad_ended: "ad_ended",
-      video_ready: "video_ready"
+      ad_ended: "ad_ended"
     };
 
     for (const [key, value] of Object.entries(events)) {
       const eventKey = Twitch.Player[key.toUpperCase()];
       if (eventKey) {
         player.addEventListener(eventKey, () => {
-          if (window.AndroidInterface && AndroidInterface.onEvent) {
-            AndroidInterface.onEvent(value);
+          if (window.AndroidInterface && window.AndroidInterface.onEvent) {
+            window.AndroidInterface.onEvent(value);
           }
         });
       }
