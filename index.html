@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Twitch Embed</title>
+  <title>Ch4ir</title>
   <script src="https://player.twitch.tv/js/embed/v1.js"></script>
   <style>
     html, body {
@@ -21,7 +21,12 @@
   <div id="twitch-embed"></div>
   <script>
     const urlParams = new URLSearchParams(window.location.search);
-    const channelName = urlParams.get('channel') || 'dotatv247';
+    const channelName = urlParams.get('channel');
+
+    if (!channelName) {
+      document.body.innerHTML = "<p style='color: white; text-align: center; margin-top: 50px;'>Missing channel parameter in URL</p>";
+      throw new Error("Missing 'channel' query parameter");
+    }
 
     const player = new Twitch.Player("twitch-embed", {
       width: "100%",
@@ -31,12 +36,20 @@
       parent: ["safelogj.github.io"]
     });
 
+    window.playerReady = false;
+
+    player.addEventListener(Twitch.Player.READY, function() {
+      window.playerReady = true;
+      if (window.AndroidInterface && AndroidInterface.onEvent) {
+        AndroidInterface.onEvent('ready');
+      }
+    });
+
     const events = {
       play: "play",
       pause: "pause",
       mute: "mute",
       unmute: "unmute",
-      ready: "ready",
       ended: "ended",
       online: "online",
       offline: "offline",
