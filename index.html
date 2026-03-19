@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ch4IR</title>
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+    <style>
+        html, body {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          overflow: hidden;
+        }
+        #twitch-embed {
+          width: 100vw;
+          height: 100vh;
+        }
+    </style>
+</head>
+<body>
+<div id="twitch-embed"></div>
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const channelName = urlParams.get('channel');
+
+    if (!channelName) {
+      document.body.innerHTML = "<p style='color: white; text-align: center; margin-top: 50px;'>Missing channel parameter in URL</p>";
+      throw new Error("Missing 'channel' query parameter");
+    }
+
+    const player = new Twitch.Player("twitch-embed", {
+      width: "100%",
+      height: "100%",
+      channel: channelName,
+      autoplay: true,
+      parent: ["safelogj.github.io"]
+    });
+
+    window.playerReady = false;
+
+    player.addEventListener(Twitch.Player.READY, function() {
+      window.playerReady = true;
+      if (window.AndroidInterface && window.AndroidInterface.onEvent) {
+        window.AndroidInterface.onEvent('ready');
+      }
+    });
+
+    const events = {
+      play: "play",
+      pause: "pause",
+      ended: "ended",
+      online: "online",
+      offline: "offline",
+      seek: "seek",
+      playback_blocked: "playback_blocked",
+      playing: "playing"
+    };
+
+    for (const [key, value] of Object.entries(events)) {
+      const eventKey = Twitch.Player[key.toUpperCase()];
+      if (eventKey) {
+        player.addEventListener(eventKey, () => {
+          if (window.AndroidInterface && window.AndroidInterface.onEvent) {
+            window.AndroidInterface.onEvent(value);
+          }
+        });
+      }
+    }
+</script>
+</body>
+</html>
+
