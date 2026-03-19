@@ -1,5 +1,5 @@
 # MultiStream Player
-
+![Ch4IR](./ch4irTGoogle.png)
 ### Introduction
 Play up to four streams simultaneously.
 * Supports surveillance cameras (RTSP links)
