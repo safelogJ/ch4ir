@@ -1,11 +1,21 @@
-NOTICE
+This application includes open source and third-party libraries:
 
-Chair - Online Video Player Application
+1. AndroidX Libraries (AppCompat, Activity, ConstraintLayout, etc.)
+   Copyright © The Android Open Source Project
+   License: Apache License, Version 2.0
+   Link: https://developer.android.com/jetpack/androidx
 
-© [Evgenii Chekmazov], [2025]
+2. Google Material Components
+   Copyright © Google LLC
+   License: Apache License, Version 2.0
+   Link: https://github.com/material-components/material-components-android
 
-All rights reserved.
+3. Media3 ExoPlayer (ExoPlayer, UI, RTSP, HLS, DASH, DataSource)
+   Copyright © Google LLC
+   License: Apache License, Version 2.0
+   Link: https://github.com/androidx/media3
 
-This software is proprietary and confidential. Unauthorized copying, modification, distribution, or reverse engineering is strictly prohibited.
-
-Use of this software is permitted only as provided by [Evgenii Chekmazov].
+4. JUnit 4
+   Copyright © JUnit. All Rights Reserved.
+   License: Eclipse Public License 1.0
+   Link: https://github.com/junit-team/junit4
