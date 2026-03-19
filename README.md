@@ -1,4 +1,8 @@
 # MultiStream Player
+
+[![Google Play](https://img.shields.io/badge/Google_Play-000000?style=for-the-badge&logo=google-play&logoColor=white)](https://play.google.com/store/apps/details?id=com.safelogj.ch4ir)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/FNOfnhpO1aI)
+
 ![Ch4IR](./ch4irTGoogle.png)
 ### Introduction
 Play up to four streams simultaneously.

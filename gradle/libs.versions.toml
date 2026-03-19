@@ -6,10 +6,10 @@ espressoCore = "3.7.0"
 appcompat = "1.7.1"
 material = "1.13.0"
 documentfile = "1.1.0"
-activity = "1.12.2"
+activity = "1.13.0"
 constraintlayout = "2.2.1"
 transition = "1.7.0"
-exo = "1.9.0"
+exo = "1.9.3"
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
