@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="play_btn_desc">воспроизвести</string>
+    <string name="record_btn_desc">запись</string>
+    <string name="add_bookmark_btn_desc">добавить закладку</string>
+    <string name="remove_bookmark_btn_desc">удалить закладку</string>
+    <string name="clear_files_btn_desc">очистить файлы</string>
+    <string name="clear_files_path_desc">путь к файлам для очистки</string>
+    <string name="clear_files_plus_btn_desc">увеличить количество файлов</string>
+    <string name="clear_files_minus_btn_desc">уменьшить количество файлов</string>
+    <string name="clear_files_value_desc">удалять файлы через</string>
+    <string name="channel_name">Название канала</string>
+    <string name="link">Ссылка</string>
+    <string name="dialog_empty_input">&#x1F53A;</string>
+    <string name="okey">ОК</string>
+    <string name="cancel">Отмена</string>
+    <string name="delete">Удалить</string>
+    <string name="mute">Без звука</string>
+    <string name="falied_open_link">Не удалось воспроизвести ссылку</string>
+    <string name="falied_link_format">Неподдерживаемый формат ссылки</string>
+    <string name="choose_bookmark_delete">Выберите закладки для удаления</string>
+    <string name="choose_bookmark_play">Выберите закладку для воспроизведения</string>
+    <string name="add_bookmark">Добавьте закладку</string>
+    <string name="player1desc">плеер 1</string>
+    <string name="player2desc">плеер 2</string>
+    <string name="player3desc">плеер 3</string>
+    <string name="player4desc">плеер 4</string>
+    <string name="disclamer_title">Внимание</string>
+    <string name="disclamer_body">Вы переходите на внешний сайт, который содержит ссылки, добавленные пользователями. Приложение не контролирует их содержание, работоспособность или соответствие законодательству. Используйте его на свой страх и риск. Продолжить?</string>
+    <string name="find_links_in_file">Добавить найденные в файле ссылки?</string>
+    <string name="not_find_links_in_file">Ссылки не найдены</string>
+    <string name="check_all_bookmark_for_del">Все</string>
+    <string name="not_available_yet">Эта возможность пока недоступна</string>
+    <string name="not_find_links_in_file_rules"><![CDATA[<br>Не удалось найти ссылки в указанном файле.<br>
+    Ссылки в файле должны быть записаны в формате:<br><br><font color = "#006064">
+    Название канала<br>
+    Ссылка<br>
+    Название канала<br>
+    Ссылка<br>
+    Название канала<br>
+    Ссылка</font><br><br>
+    Или в стандартном формате m3u<br>]]></string>
+    <string name="errors_del_videos">Произошло много ошибок при удалении старых записей.</string>
+    <string name="set_del_file_period1">Автоматически удалять файлы из папки выбранного плеера</string>
+    <string name="set_del_file_period2">через заданное количество дней.</string>
+    <string name="set_del_file_period0">Установить период удаления файлов.</string>
+    <string name="copied_text">Скопировано.</string>
+    <string name="empty_visual_record_dir">Папка с записями</string>
+    <string name="send_link_to_dev"><![CDATA[<br><br>И отправьте эти рабочие ссылки разработчику, чтобы он мог исправить приложение.<br>
+<font color = "#FF1744">Напоминание: не отправляйте ссылки с правами администратора.</font><br>]]></string>
+    <string name="ads_button_text">Разрешить персонализированную рекламу (передавать рекламный идентификатор)</string>
+    <string name="skip_start_chekbox_text">Пропускать этот экран при включении</string>
+    <string name="hide_scale_chekbox_text">Скрыть результат масштабирования</string>
+    <string name="privacy_checkbox">Я подтверждаю, что прочитал(а) и согласен(на) с условиями Политики конфиденциальности.</string>
+    <string name="ad_id_title">Настройки отображаемой рекламы</string>
+    <string name="ad_id_allow">Разрешить</string>
+    <string name="ad_id_turn_off">Отключить</string>
+    <string name="ad_id_text"><![CDATA[<br><br>Мы используем рекламную сеть для показа рекламы.<br><br>
+Рекламная сеть может собирать данные, включая рекламный идентификатор вашего устройства, для показа персонализированной рекламы.<br><br>
+Вы можете разрешить или отключить персонализацию рекламы.<br><br>
+        Если вы отключите персонализацию, мы будем показывать только неперсонализированную рекламу.<br><br>]]></string>
+
+</resources>

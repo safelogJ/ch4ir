@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="play_btn_desc">mag-play</string>
+    <string name="record_btn_desc">mag-record</string>
+    <string name="add_bookmark_btn_desc">magdagdag ng bookmark</string>
+    <string name="remove_bookmark_btn_desc">tanggalin ang bookmark</string>
+    <string name="clear_files_btn_desc">linisin ang mga file</string>
+    <string name="clear_files_path_desc">landas ng mga file para linisin</string>
+    <string name="clear_files_plus_btn_desc">dagdagan ang bilang ng mga file</string>
+    <string name="clear_files_minus_btn_desc">bawasan ang bilang ng mga file</string>
+    <string name="clear_files_value_desc">tanggalin ang mga file pagkatapos ng</string>
+    <string name="channel_name">Pangalan ng channel</string>
+    <string name="link">Link</string>
+    <string name="dialog_empty_input">&#x1F53A;</string>
+    <string name="okey">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Tanggalin</string>
+    <string name="mute">I-mute</string>
+    <string name="falied_open_link">Nabigong mag-play ng link</string>
+    <string name="falied_link_format">Hindi suportadong format ng link</string>
+    <string name="choose_bookmark_delete">Pumili ng mga bookmark para tanggalin</string>
+    <string name="choose_bookmark_play">Pumili ng bookmark para i-play</string>
+    <string name="add_bookmark">Magdagdag ng bookmark</string>
+    <string name="player1desc">player 1</string>
+    <string name="player2desc">player 2</string>
+    <string name="player3desc">player 3</string>
+    <string name="player4desc">player 4</string>
+    <string name="disclamer_title">Babala</string>
+    <string name="disclamer_body">Pupunta ka sa isang panlabas na website na naglalaman ng mga link na idinagdag ng mga user. Hindi kinokontrol ng app ang nilalaman, pagkakaroon, o legal na pagsunod ng mga ito. Gamitin sa sariling panganib. Magpatuloy?</string>
+    <string name="find_links_in_file">Idagdag ang mga link na nakita sa file?</string>
+    <string name="not_find_links_in_file">Walang nakitang link</string>
+    <string name="check_all_bookmark_for_del">Lahat</string>
+    <string name="not_available_yet">Ang tampok na ito ay hindi pa magagamit</string>
+    <string name="not_find_links_in_file_rules"><![CDATA[<br>Walang nakitang mga link sa tinukoy na file.<br>
+Ang mga link sa file ay dapat nakasulat sa format na ito:<br><br><font color = "#006064">
+Pangalan ng channel<br>
+Link<br>
+Pangalan ng channel<br>
+Link<br>
+Pangalan ng channel<br>
+Link</font><br><br>
+O sa karaniwang m3u format<br>]]></string>
+    <string name="errors_del_videos">Maraming error habang tinatanggal ang mga lumang recording.</string>
+    <string name="set_del_file_period1">Awtomatikong tanggalin ang mga file mula sa napiling player folder</string>
+    <string name="set_del_file_period2">pagkatapos ng itinakdang bilang ng mga araw.</string>
+    <string name="set_del_file_period0">Itakda ang panahon ng pagtanggal ng mga file.</string>
+    <string name="copied_text">Nakopya na.</string>
+    <string name="empty_visual_record_dir">Folder ng mga recording</string>
+    <string name="send_link_to_dev"><![CDATA[<br><br>At ipadala ang mga gumaganang link na ito sa developer upang maayos ang app.<br>
+<font color = "#FF1744">Paalaala: Huwag magpadala ng mga link na may admin rights.</font><br>]]></string>
+    <string name="ads_button_text">Payagan ang personalized na mga patalastas (ibahagi ang advertising ID)</string>
+    <string name="skip_start_chekbox_text">Laktawan ang screen na ito sa pagsisimula</string>
+    <string name="hide_scale_chekbox_text">Itago ang resulta ng sukat</string>
+    <string name="privacy_checkbox">Kinukumpirma ko na nabasa ko at sumasang-ayon ako sa mga tuntunin ng Patakaran sa Privacy.</string>
+    <string name="ad_id_title">Mga setting ng ipinapakitang ad</string>
+    <string name="ad_id_allow">Pahintulutan</string>
+    <string name="ad_id_turn_off">I-off</string>
+    <string name="ad_id_text"><![CDATA[<br><br>Gumagamit kami ng advertising network upang magpakita ng mga patalastas.<br><br>
+Ang advertising network ay maaaring mangolekta ng mga data, kasama ang advertising ID ng iyong aparato, upang magpakita ng mga personalized na patalastas.<br><br>
+Maaari mong paganahin o huwag paganahin ang personalisasyon ng mga patalastas.<br><br>
+Kung hindi mo pinagana ang personalisasyon, magpapakita kami ng mga hindi personalisadong patalastas.<br><br>]]></string>
+
+
+</resources>

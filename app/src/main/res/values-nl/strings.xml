@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="play_btn_desc">afspelen</string>
+    <string name="record_btn_desc">opnemen</string>
+    <string name="add_bookmark_btn_desc">bladwijzer toevoegen</string>
+    <string name="remove_bookmark_btn_desc">bladwijzer verwijderen</string>
+    <string name="clear_files_btn_desc">bestanden wissen</string>
+    <string name="clear_files_path_desc">pad naar bestanden om te wissen</string>
+    <string name="clear_files_plus_btn_desc">verhoog aantal bestanden</string>
+    <string name="clear_files_minus_btn_desc">verlaag aantal bestanden</string>
+    <string name="clear_files_value_desc">bestanden verwijderen na</string>
+    <string name="channel_name">Kanaalnaam</string>
+    <string name="link">Link</string>
+    <string name="dialog_empty_input">&#x1F53A;</string>
+    <string name="okey">OK</string>
+    <string name="cancel">Annuleren</string>
+    <string name="delete">Verwijderen</string>
+    <string name="mute">Dempen</string>
+    <string name="falied_open_link">Kan link niet afspelen</string>
+    <string name="falied_link_format">Niet-ondersteund linkformaat</string>
+    <string name="choose_bookmark_delete">Kies bladwijzers om te verwijderen</string>
+    <string name="choose_bookmark_play">Kies bladwijzer om af te spelen</string>
+    <string name="add_bookmark">Bladwijzer toevoegen</string>
+    <string name="player1desc">speler 1</string>
+    <string name="player2desc">speler 2</string>
+    <string name="player3desc">speler 3</string>
+    <string name="player4desc">speler 4</string>
+    <string name="disclamer_title">Let op</string>
+    <string name="disclamer_body">U staat op het punt een externe website te bezoeken met door gebruikers toegevoegde links. De app controleert de inhoud, beschikbaarheid of wettelijke naleving niet. Gebruik op eigen risico. Doorgaan?</string>
+    <string name="find_links_in_file">Gevonden links in het bestand toevoegen?</string>
+    <string name="not_find_links_in_file">Geen links gevonden</string>
+    <string name="check_all_bookmark_for_del">Alle</string>
+    <string name="not_available_yet">Deze functie is nog niet beschikbaar</string>
+    <string name="not_find_links_in_file_rules"><![CDATA[<br>Kon geen links vinden in het opgegeven bestand.<br>
+Links in het bestand moeten in het volgende formaat staan:<br><br><font color = "#006064">
+Kanaalnaam<br>
+Link<br>
+Kanaalnaam<br>
+Link<br>
+Kanaalnaam<br>
+Link</font><br><br>
+Of in standaard m3u-formaat<br>]]></string>
+    <string name="errors_del_videos">Er zijn veel fouten opgetreden bij het verwijderen van oude opnames.</string>
+    <string name="set_del_file_period1">Verwijder automatisch bestanden uit de map van de geselecteerde speler</string>
+    <string name="set_del_file_period2">na een ingesteld aantal dagen.</string>
+    <string name="set_del_file_period0">Stel de periode in voor het verwijderen van bestanden.</string>
+    <string name="copied_text">Gekopieerd.</string>
+    <string name="empty_visual_record_dir">Opname-map</string>
+    <string name="send_link_to_dev"><![CDATA[<br><br>En stuur deze werkende links naar de ontwikkelaar om de app te verbeteren.<br>
+<font color = "#FF1744">Herinnering: stuur geen links met beheerdersrechten.</font><br>]]></string>
+    <string name="ads_button_text">Persoonlijke advertenties toestaan (advertentie-ID delen)</string>
+    <string name="skip_start_chekbox_text">Dit scherm overslaan bij opstarten</string>
+    <string name="hide_scale_chekbox_text">Schaalresultaat verbergen</string>
+    <string name="privacy_checkbox">Ik bevestig dat ik de privacyverklaring heb gelezen en akkoord ga met de voorwaarden.</string>
+    <string name="ad_id_title">Advertentie-instellingen</string>
+    <string name="ad_id_allow">Toestaan</string>
+    <string name="ad_id_turn_off">Uitschakelen</string>
+    <string name="ad_id_text"><![CDATA[<br><br>We gebruiken een advertentienetwerk om advertenties weer te geven.<br><br>
+Het advertentienetwerk kan gegevens verzamelen, inclusief het advertentie-ID van uw apparaat, om gepersonaliseerde advertenties weer te geven.<br><br>
+U kunt toestaan of uitschakelen gepersonaliseerde advertenties.<br><br>
+Als u gepersonaliseerde advertenties uitschakelt, tonen we alleen niet-gepersonaliseerde advertenties.<br><br>]]></string>
+
+
+</resources>

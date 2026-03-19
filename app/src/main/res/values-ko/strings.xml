@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="play_btn_desc">재생</string>
+    <string name="record_btn_desc">녹화</string>
+    <string name="add_bookmark_btn_desc">북마크 추가</string>
+    <string name="remove_bookmark_btn_desc">북마크 제거</string>
+    <string name="clear_files_btn_desc">파일 지우기</string>
+    <string name="clear_files_path_desc">지울 파일 경로</string>
+    <string name="clear_files_plus_btn_desc">파일 수 증가</string>
+    <string name="clear_files_minus_btn_desc">파일 수 감소</string>
+    <string name="clear_files_value_desc">파일 삭제 주기</string>
+    <string name="channel_name">채널 이름</string>
+    <string name="link">링크</string>
+    <string name="dialog_empty_input">&#x1F53A;</string>
+    <string name="okey">확인</string>
+    <string name="cancel">취소</string>
+    <string name="delete">삭제</string>
+    <string name="mute">음소거</string>
+    <string name="falied_open_link">링크 재생 실패</string>
+    <string name="falied_link_format">지원되지 않는 링크 형식</string>
+    <string name="choose_bookmark_delete">삭제할 북마크 선택</string>
+    <string name="choose_bookmark_play">재생할 북마크 선택</string>
+    <string name="add_bookmark">북마크 추가</string>
+    <string name="player1desc">플레이어 1</string>
+    <string name="player2desc">플레이어 2</string>
+    <string name="player3desc">플레이어 3</string>
+    <string name="player4desc">플레이어 4</string>
+    <string name="disclamer_title">주의</string>
+    <string name="disclamer_body">사용자가 추가한 링크를 포함하는 외부 사이트로 이동하려고 합니다. 앱은 해당 콘텐츠, 가용성 또는 법적 준수를 제어하지 않습니다. 자신의 책임하에 사용하십시오. 계속하시겠습니까?</string>
+    <string name="find_links_in_file">파일에서 찾은 링크를 추가하시겠습니까?</string>
+    <string name="not_find_links_in_file">링크를 찾을 수 없습니다</string>
+    <string name="check_all_bookmark_for_del">전체</string>
+    <string name="not_available_yet">이 기능은 아직 사용할 수 없습니다</string>
+    <string name="not_find_links_in_file_rules"><![CDATA[<br>지정된 파일에서 링크를 찾을 수 없습니다.<br>
+파일의 링크는 다음 형식으로 작성되어야 합니다:<br><br><font color = "#006064">
+채널 이름<br>
+링크<br>
+채널 이름<br>
+링크<br>
+채널 이름<br>
+링크</font><br><br>
+또는 표준 m3u 형식으로<br>]]></string>
+    <string name="errors_del_videos">오래된 녹화를 삭제하는 중 오류가 많이 발생했습니다.</string>
+    <string name="set_del_file_period1">선택한 플레이어 폴더의 파일을 자동으로 삭제합니다</string>
+    <string name="set_del_file_period2">설정된 일 수 후에.</string>
+    <string name="set_del_file_period0">파일 삭제 주기를 설정하십시오.</string>
+    <string name="copied_text">복사됨.</string>
+    <string name="empty_visual_record_dir">녹화 폴더</string>
+    <string name="send_link_to_dev"><![CDATA[<br><br>이 작동하는 링크를 개발자에게 보내 앱을 수정할 수 있도록 해주세요.<br>
+<font color = "#FF1744">참고: 관리자 권한이 있는 링크는 보내지 마세요.</font><br>]]></string>
+    <string name="ads_button_text">개인 맞춤 광고 허용(광고 ID 공유)</string>
+    <string name="skip_start_chekbox_text">시작 시 이 화면 건너뛰기</string>
+    <string name="hide_scale_chekbox_text">스케일 결과 숨기기</string>
+    <string name="privacy_checkbox">개인정보처리방침의 내용을 읽고 동의함을 확인합니다.</string>
+    <string name="ad_id_title">표시되는 광고 설정</string>
+    <string name="ad_id_allow">허용</string>
+    <string name="ad_id_turn_off">끄기</string>
+    <string name="ad_id_text"><![CDATA[<br><br>우리는 광고 네트워크를 사용하여 광고를 표시합니다.<br><br>
+광고 네트워크는 개인화된 광고를 표시하기 위해 장치의 광고 ID를 포함한 데이터를 수집할 수 있습니다.<br><br>
+광고 개인화를 허용하거나 비활성화할 수 있습니다.<br><br>
+개인화를 비활성화하면 비개인화된 광고만 표시됩니다.<br><br>]]></string>
+
+
+</resources>

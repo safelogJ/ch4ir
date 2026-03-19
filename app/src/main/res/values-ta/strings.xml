@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="play_btn_desc">பPlayed</string>
+    <string name="record_btn_desc">பதிவு</string>
+    <string name="add_bookmark_btn_desc">புதுக்குறிப்பைச் சேர்க்கவும்</string>
+    <string name="remove_bookmark_btn_desc">புதுக்குறிப்பை அகற்றவும்</string>
+    <string name="clear_files_btn_desc">கோப்புகளை அழிக்கவும்</string>
+    <string name="clear_files_path_desc">அழிக்க கோப்புகளுக்கான பாதை</string>
+    <string name="clear_files_plus_btn_desc">கோப்புகளின் எண்ணிக்கையை அதிகரிக்கவும்</string>
+    <string name="clear_files_minus_btn_desc">கோப்புகளின் எண்ணிக்கையை குறைக்கவும்</string>
+    <string name="clear_files_value_desc">கோப்புகளை அழிக்க </string>
+    <string name="channel_name">சேனல் பெயர்</string>
+    <string name="link">இணைப்பு</string>
+    <string name="dialog_empty_input">&#x1F53A;</string>
+    <string name="okey">சரி</string>
+    <string name="cancel">இரத்து</string>
+    <string name="delete">அழிக்கவும்</string>
+    <string name="mute">அமைதியாக்கு</string>
+    <string name="falied_open_link">இணைப்பைத் திறக்க முடியவில்லை</string>
+    <string name="falied_link_format">ஆதரிக்கப்படாத இணைப்பு வடிவம்</string>
+    <string name="choose_bookmark_delete">அழிக்க புதுக்குறிப்புகளைத் தேர்வு செய்யவும்</string>
+    <string name="choose_bookmark_play">படிக்க புதுக்குறிப்பைத் தேர்வு செய்யவும்</string>
+    <string name="add_bookmark">புக் மார்க் சேர்க்கவும்</string>
+    <string name="player1desc">பிளேயர் 1</string>
+    <string name="player2desc">பிளேயர் 2</string>
+    <string name="player3desc">பிளேயர் 3</string>
+    <string name="player4desc">பிளேயர் 4</string>
+    <string name="disclamer_title">எச்சரிக்கை</string>
+    <string name="disclamer_body">பயனர்கள் இணைத்துள்ள இணைப்புகள் கொண்ட வெளி வலைத்தளத்திற்குச் செல்ல உள்ளீர்கள். பயன்பாடு அதன் உள்ளடக்கம், கிடைக்கும் தன்மை அல்லது சட்டப்படியான இணக்கத்தையும் கட்டுப்படுத்தாது. உங்கள் பொறுப்பில் பயன்படுத்தவும். தொடரவா?</string>
+    <string name="find_links_in_file">கோப்பில் கண்ட இணைப்புகளைச் சேர்க்கவா?</string>
+    <string name="not_find_links_in_file">எந்த இணைப்பும் கிடைக்கவில்லை</string>
+    <string name="check_all_bookmark_for_del">அனைத்தும்</string>
+    <string name="not_available_yet">இந்த வசதி இன்னும் கிடைக்கவில்லை</string>
+    <string name="not_find_links_in_file_rules"><![CDATA[<br>குறிப்பிட்ட கோப்பில் எந்த இணைப்பும் கிடைக்கவில்லை.<br>
+கோப்பில் உள்ள இணைப்புகள் பின்வரும் வடிவத்தில் இருக்க வேண்டும்:<br><br><font color = "#006064">
+சேனல் பெயர்<br>
+இணைப்பு<br>
+சேனல் பெயர்<br>
+இணைப்பு<br>
+சேனல் பெயர்<br>
+இணைப்பு</font><br><br>
+அல்லது நிலையான m3u வடிவத்தில்<br>]]></string>
+    <string name="errors_del_videos">பழைய பதிவுகளை அழிக்கும் போது பல தவறுகள் ஏற்படின.</string>
+    <string name="set_del_file_period1">தேர்ந்தெடுத்த பிளேயர் ஃபோல்டரிலிருந்து கோப்புகளை தானாக அழிக்கவும்</string>
+    <string name="set_del_file_period2">காண்கிரம் மற்றும் குறிப்பிட்ட நாட்களுக்கு பிறகு.</string>
+    <string name="set_del_file_period0">கோப்புகளுக்கு அழிப்பதற்கான காலத்தை அமைக்கவும்.</string>
+    <string name="copied_text">பகிர்ந்துவிட்டது.</string>
+    <string name="empty_visual_record_dir">பதிவு கோப்புறை</string>
+    <string name="send_link_to_dev"><![CDATA[<br><br>இந்த வேலை செய்பவை இணைப்புகளை டெவலப்பருக்கு அனுப்பி செயலியை சரி செய்யவும்.<br>
+<font color = "#FF1744">குறிப்பு: நிர்வாக உரிமைகளுடன் இணைப்புகளை அனுப்ப வேண்டாம்.</font><br>]]></string>
+    <string name="ads_button_text">தனிப்பயன் விளம்பரங்களை அனுமதிக்கவும் (விளம்பர ஐடியைப் பகிரவும்)</string>
+    <string name="skip_start_chekbox_text">தொடக்கத்தில் இந்த திரையை தவிர்க்கவும்</string>
+    <string name="hide_scale_chekbox_text">அளவீட்டு முடிவை மறைக்கவும்</string>
+    <string name="privacy_checkbox">பிரைவசி கொள்கை விதிமுறைகளை நான் படித்து ஏற்றுக் கொண்டிருக்கிறேன் என்பதை நான் உறுதிப்படுத்துகிறேன்.</string>
+    <string name="ad_id_title">காண்பிக்கப்படும் விளம்பர அமைப்புகள்</string>
+    <string name="ad_id_allow">அனுமதி</string>
+    <string name="ad_id_turn_off">நிறுத்து</string>
+    <string name="ad_id_text"><![CDATA[<br><br>நாங்கள் விளம்பரங்களை காட்டுவதற்காக ஒரு விளம்பர வலைப்பின்னலை பயன்படுத்துகிறோம்.<br><br>
+விளம்பர வலைப்பின்னல் உங்களின் சாதன விளம்பர ஐடி ஆகியவற்றை சேகரித்து, தனிப்பயனாக்கப்பட்ட விளம்பரங்களை காட்டலாம்.<br><br>
+நீங்கள் தனிப்பயனாக்க அல்லது நிறுத்த முடியும்.<br><br>
+நீங்கள் தனிப்பயனாக்கத்தை நிறுத்தினால், நாங்கள் அதற்கு பதிலாக பொதுவான விளம்பரங்களை காட்டுவோம்.<br><br>]]></string>
+
+
+</resources>

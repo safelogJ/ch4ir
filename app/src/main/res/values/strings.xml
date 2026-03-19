@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name" translatable="false">Ch4IR</string>
+    <string name="play_btn_desc">play</string>
+    <string name="record_btn_desc">record</string>
+    <string name="add_bookmark_btn_desc">add bookmark</string>
+    <string name="remove_bookmark_btn_desc">remove bookmark</string>
+    <string name="clear_files_btn_desc">clear files</string>
+    <string name="clear_files_path_desc">clear files path</string>
+    <string name="clear_files_plus_btn_desc">clear files btn plus</string>
+    <string name="clear_files_minus_btn_desc">clear files btn minus</string>
+    <string name="clear_files_value_desc">clear files value</string>
+    <string name="channel_name">Channel name</string>
+    <string name="link">Link</string>
+    <string name="dialog_empty_input">&#x1F53A;</string>
+    <string name="okey">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="mute">mute</string>
+    <string name="falied_open_link">Failed to play</string>
+    <string name="falied_link_format">Unsupported link format</string>
+    <string name="choose_bookmark_delete">Select bookmarks to delete</string>
+    <string name="choose_bookmark_play">Select bookmark to play</string>
+    <string name="add_bookmark">Add bookmark</string>
+    <string name="player1desc">player 1</string>
+    <string name="player2desc">player 2</string>
+    <string name="player3desc">player 3</string>
+    <string name="player4desc">player 4</string>
+    <string name="disclamer_title">Attention</string>
+    <string name="disclamer_body">You are about to visit an external website that contains user-submitted links. The app does not control their content, availability, or legal compliance. Use at your own risk. Continue?</string>
+    <string name="find_links_in_file">Add links found in the file?</string>
+    <string name="not_find_links_in_file">No links found</string>
+    <string name="check_all_bookmark_for_del">All</string>
+    <string name="not_available_yet">This feature is not available yet</string>
+    <string name="not_find_links_in_file_rules"><![CDATA[<br>Could not find links in the specified file.<br>
+    Links in the file must be written in the format:<br><br><font color = "#006064">
+    Channel name<br>
+    Link<br>
+    Channel name<br>
+    Link<br>
+    Channel name<br>
+    Link</font><br><br>
+    Or in standard m3u format<br>]]></string>
+
+    <string name="play_resource_desc" translatable="false">play_resource</string>
+    <string name="record_dir_desc" translatable="false">Recordings folder</string>
+    <string name="scale_default" translatable="false">1.00</string>
+    <string name="help" translatable="false">iptv-org</string>
+    <string name="native_block_1" translatable="false">native_block_1</string>
+    <string name="native_block_2" translatable="false">native_block_2</string>
+    <string name="native_block_3" translatable="false">native_block_3</string>
+    <string name="native_block_4" translatable="false">native_block_4</string>
+    <string name="start_button_ok" translatable="false">OK</string>
+    <string name="start_button_privacy" translatable="false">Privacy</string>
+    <string name="start_button_youtube" translatable="false">Youtube</string>
+
+
+    <string name="errors_del_videos">Many errors while deleting old recordings.</string>
+    <string name="set_del_file_period1">Automatically delete files from the specified player\'s folder</string>
+    <string name="set_del_file_period2">after a set number of days.</string>
+    <string name="set_del_file_period0">Set the file deletion period.</string>
+    <string name="copied_text">Сopied.</string>
+    <string name="empty_visual_record_dir">Recordings folder</string>
+    <string name="ads_button_text">Allow personalized ads (share advertising ID)</string>
+    <string name="skip_start_chekbox_text">Skip this screen on startup</string>
+    <string name="hide_scale_chekbox_text">Hide scale result</string>
+    <string name="privacy_checkbox">I confirm that I have read and agree to the terms of the Privacy Policy.</string>
+
+    <string name="send_link_to_dev"><![CDATA[<br><br>And send these working links to the developer to fix the app.<br>
+    <font color = "#FF1744">Reminder: Do not send links with admin rights.</font><br>]]></string>
+    <string name="ad_id_title">Ad display settings</string>
+    <string name="ad_id_allow">Allow</string>
+    <string name="ad_id_turn_off">Turn off</string>
+    <string name="ad_id_text"><![CDATA[<br><br>We use an advertising network to serve ads.<br><br>
+The advertising network may collect data, including your device\'s advertising identifier, to serve personalized ads.<br><br>
+You can allow or turn off ad personalization.<br><br>
+If you turn off personalization, we will only serve non-personalized ads.<br><br>]]></string>
+
+</resources>

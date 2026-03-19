@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="play_btn_desc">再生</string>
+    <string name="record_btn_desc">録画</string>
+    <string name="add_bookmark_btn_desc">ブックマークを追加</string>
+    <string name="remove_bookmark_btn_desc">ブックマークを削除</string>
+    <string name="clear_files_btn_desc">ファイルをクリア</string>
+    <string name="clear_files_path_desc">クリアするファイルのパス</string>
+    <string name="clear_files_plus_btn_desc">ファイル数を増やす</string>
+    <string name="clear_files_minus_btn_desc">ファイル数を減らす</string>
+    <string name="clear_files_value_desc">ファイルを削除する日数</string>
+    <string name="channel_name">チャンネル名</string>
+    <string name="link">リンク</string>
+    <string name="dialog_empty_input">&#x1F53A;</string>
+    <string name="okey">OK</string>
+    <string name="cancel">キャンセル</string>
+    <string name="delete">削除</string>
+    <string name="mute">ミュート</string>
+    <string name="falied_open_link">リンクの再生に失敗しました</string>
+    <string name="falied_link_format">サポートされていないリンク形式</string>
+    <string name="choose_bookmark_delete">削除するブックマークを選択してください</string>
+    <string name="choose_bookmark_play">再生するブックマークを選択してください</string>
+    <string name="add_bookmark">ブックマークを追加</string>
+    <string name="player1desc">プレーヤー1</string>
+    <string name="player2desc">プレーヤー2</string>
+    <string name="player3desc">プレーヤー3</string>
+    <string name="player4desc">プレーヤー4</string>
+    <string name="disclamer_title">注意</string>
+    <string name="disclamer_body">ユーザーが追加したリンクを含む外部サイトにアクセスしようとしています。このアプリはリンクの内容、利用可能性、または法的な適合性を管理していません。自己責任で使用してください。続行しますか？</string>
+    <string name="find_links_in_file">ファイル内で見つかったリンクを追加しますか？</string>
+    <string name="not_find_links_in_file">リンクが見つかりませんでした</string>
+    <string name="check_all_bookmark_for_del">すべて</string>
+    <string name="not_available_yet">この機能はまだ利用できません</string>
+    <string name="not_find_links_in_file_rules"><![CDATA[<br>指定されたファイル内にリンクが見つかりませんでした。<br>
+ファイル内のリンクは次の形式で記述する必要があります:<br><br><font color = "#006064">
+チャンネル名<br>
+リンク<br>
+チャンネル名<br>
+リンク<br>
+チャンネル名<br>
+リンク</font><br><br>
+または標準の m3u 形式で<br>]]></string>
+    <string name="errors_del_videos">古い録画を削除する際に多くのエラーが発生しました。</string>
+    <string name="set_del_file_period1">選択したプレーヤーのフォルダからファイルを自動的に削除します</string>
+    <string name="set_del_file_period2">指定した日数後に。</string>
+    <string name="set_del_file_period0">ファイル削除の期間を設定してください。</string>
+    <string name="copied_text">コピーしました。</string>
+    <string name="empty_visual_record_dir">録画フォルダ</string>
+    <string name="send_link_to_dev"><![CDATA[<br><br>これらの動作するリンクを開発者に送信して、アプリを修正できるようにしてください。<br>
+<font color = "#FF1744">注意：管理者権限のあるリンクは送信しないでください。</font><br>]]></string>
+    <string name="ads_button_text">パーソナライズ広告を許可する（広告IDを共有）</string>
+    <string name="skip_start_chekbox_text">起動時にこの画面をスキップする</string>
+    <string name="hide_scale_chekbox_text">スケール結果を非表示にする</string>
+    <string name="privacy_checkbox">プライバシーポリシーの内容を読み、同意したことを確認します。</string>
+    <string name="ad_id_title">表示される広告の設定</string>
+    <string name="ad_id_allow">許可する</string>
+    <string name="ad_id_turn_off">オフにする</string>
+    <string name="ad_id_text"><![CDATA[<br><br>広告ネットワークを使用して広告を表示します。<br><br>
+広告ネットワークは、個別化された広告を表示するために、あなたのデバイスの広告識別子などのデータを収集する場合があります。<br><br>
+広告のパーソナライズを許可するか、無効にすることができます。<br><br>
+パーソナライズを無効にすると、パーソナライズされていない広告のみが表示されます。<br><br>]]></string>
+
+
+</resources>

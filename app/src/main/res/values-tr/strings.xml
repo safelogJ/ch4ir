@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="play_btn_desc">oynat</string>
+    <string name="record_btn_desc">kayıt</string>
+    <string name="add_bookmark_btn_desc">yer imi ekle</string>
+    <string name="remove_bookmark_btn_desc">yer imi kaldır</string>
+    <string name="clear_files_btn_desc">dosyaları temizle</string>
+    <string name="clear_files_path_desc">temizlenecek dosya yolu</string>
+    <string name="clear_files_plus_btn_desc">dosya sayısını artır</string>
+    <string name="clear_files_minus_btn_desc">dosya sayısını azalt</string>
+    <string name="clear_files_value_desc">dosyaları şunlardan sonra sil</string>
+    <string name="channel_name">Kanal adı</string>
+    <string name="link">Bağlantı</string>
+    <string name="dialog_empty_input">&#x1F53A;</string>
+    <string name="okey">Tamam</string>
+    <string name="cancel">İptal</string>
+    <string name="delete">Sil</string>
+    <string name="mute">Sessiz</string>
+    <string name="falied_open_link">Bağlantı oynatılamadı</string>
+    <string name="falied_link_format">Desteklenmeyen bağlantı biçimi</string>
+    <string name="choose_bookmark_delete">Silinecek yer imlerini seçin</string>
+    <string name="choose_bookmark_play">Oynatılacak yer imlerini seçin</string>
+    <string name="add_bookmark">Yer imi ekleyin</string>
+    <string name="player1desc">oynatıcı 1</string>
+    <string name="player2desc">oynatıcı 2</string>
+    <string name="player3desc">oynatıcı 3</string>
+    <string name="player4desc">oynatıcı 4</string>
+    <string name="disclamer_title">Dikkat</string>
+    <string name="disclamer_body">Kullanıcılar tarafından eklenen bağlantılar içeren harici bir siteyi ziyaret etmek üzeresiniz. Uygulama bu bağlantıların içeriğini, erişilebilirliğini veya yasal uygunluğunu kontrol etmez. Kendi sorumluluğunuzda kullanın. Devam edilsin mi?</string>
+    <string name="find_links_in_file">Dosyada bulunan bağlantılar eklensin mi?</string>
+    <string name="not_find_links_in_file">Bağlantı bulunamadı</string>
+    <string name="check_all_bookmark_for_del">Tümü</string>
+    <string name="not_available_yet">Bu özellik henüz kullanılamıyor</string>
+    <string name="not_find_links_in_file_rules"><![CDATA[<br>Belirtilen dosyada bağlantılar bulunamadı.<br>
+Dosyadaki bağlantılar şu formatta olmalıdır:<br><br><font color = "#006064">
+Kanal adı<br>
+Bağlantı<br>
+Kanal adı<br>
+Bağlantı<br>
+Kanal adı<br>
+Bağlantı</font><br><br>
+Ya da standart m3u formatında<br>]]></string>
+    <string name="errors_del_videos">Eski kayıtları silerken birçok hata oluştu.</string>
+    <string name="set_del_file_period1">Seçilen oyuncunun klasöründeki dosyaları otomatik olarak sil</string>
+    <string name="set_del_file_period2">belirtilen gün sayısından sonra.</string>
+    <string name="set_del_file_period0">Dosya silme süresini belirleyin.</string>
+    <string name="copied_text">Kopyalandı.</string>
+    <string name="empty_visual_record_dir">Kayıtlar klasörü</string>
+    <string name="send_link_to_dev"><![CDATA[<br><br>Ve bu çalışan bağlantıları geliştiriciye gönderin, böylece uygulamayı düzeltebilir.<br>
+<font color = "#FF1744">Hatırlatma: Yönetici haklarına sahip bağlantıları göndermeyin.</font><br>]]></string>
+    <string name="ads_button_text">Kişiselleştirilmiş reklamları etkinleştir (reklam kimliğini paylaş)</string>
+    <string name="skip_start_chekbox_text">Başlangıçta bu ekranı atla</string>
+    <string name="hide_scale_chekbox_text">Ölçek sonucunu gizle</string>
+    <string name="privacy_checkbox">Gizlilik Politikası şartlarını okuduğumu ve kabul ettiğimi onaylıyorum.</string>
+    <string name="ad_id_title">Gösterilen reklam ayarları</string>
+    <string name="ad_id_allow">İzin ver</string>
+    <string name="ad_id_turn_off">Kapat</string>
+    <string name="ad_id_text"><![CDATA[<br><br>Reklam göstermek için reklam ağı kullanıyoruz.<br><br>
+Reklam ağı, kişiselleştirilmiş reklamlar göstermek için cihazınızın reklam kimliğini içeren veriler toplayabilir.<br><br>
+Reklam kişiselleştirmesini etkinleştirebilirsiniz veya devre dışı bırakabilirsiniz.<br><br>
+Kişiselleştirmeyi devre dışı bırakırsanız, yalnızca kişiselleştirilmemiş reklamlar göstereceğiz.<br><br>]]></string>
+
+
+</resources>

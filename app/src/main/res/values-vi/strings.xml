@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="play_btn_desc">phát</string>
+    <string name="record_btn_desc">ghi âm</string>
+    <string name="add_bookmark_btn_desc">thêm đánh dấu</string>
+    <string name="remove_bookmark_btn_desc">xóa đánh dấu</string>
+    <string name="clear_files_btn_desc">xóa tập tin</string>
+    <string name="clear_files_path_desc">đường dẫn tập tin để xóa</string>
+    <string name="clear_files_plus_btn_desc">tăng số lượng tập tin</string>
+    <string name="clear_files_minus_btn_desc">giảm số lượng tập tin</string>
+    <string name="clear_files_value_desc">xóa tập tin sau</string>
+    <string name="channel_name">Tên kênh</string>
+    <string name="link">Liên kết</string>
+    <string name="dialog_empty_input">&#x1F53A;</string>
+    <string name="okey">OK</string>
+    <string name="cancel">Hủy</string>
+    <string name="delete">Xóa</string>
+    <string name="mute">Tắt tiếng</string>
+    <string name="falied_open_link">Không thể phát liên kết</string>
+    <string name="falied_link_format">Định dạng liên kết không được hỗ trợ</string>
+    <string name="choose_bookmark_delete">Chọn các đánh dấu để xóa</string>
+    <string name="choose_bookmark_play">Chọn đánh dấu để phát</string>
+    <string name="add_bookmark">Thêm dấu trang</string>
+    <string name="player1desc">trình phát 1</string>
+    <string name="player2desc">trình phát 2</string>
+    <string name="player3desc">trình phát 3</string>
+    <string name="player4desc">trình phát 4</string>
+    <string name="disclamer_title">Chú ý</string>
+    <string name="disclamer_body">Bạn sắp truy cập một trang web bên ngoài chứa các liên kết do người dùng thêm vào. Ứng dụng không kiểm soát nội dung, tính khả dụng hoặc sự tuân thủ pháp lý của các liên kết này. Sử dụng có rủi ro. Tiếp tục?</string>
+    <string name="find_links_in_file">Thêm các liên kết tìm thấy trong tệp?</string>
+    <string name="not_find_links_in_file">Không tìm thấy liên kết nào</string>
+    <string name="check_all_bookmark_for_del">Tất cả</string>
+    <string name="not_available_yet">Tính năng này hiện chưa khả dụng</string>
+    <string name="not_find_links_in_file_rules"><![CDATA[<br>Không thể tìm thấy liên kết trong tệp đã chỉ định.<br>
+Các liên kết trong tệp phải được viết theo định dạng:<br><br><font color = "#006064">
+Tên kênh<br>
+Liên kết<br>
+Tên kênh<br>
+Liên kết<br>
+Tên kênh<br>
+Liên kết</font><br><br>
+Hoặc theo định dạng m3u tiêu chuẩn<br>]]></string>
+    <string name="errors_del_videos">Có nhiều lỗi khi xóa các bản ghi cũ.</string>
+    <string name="set_del_file_period1">Tự động xóa tập tin từ thư mục của trình phát đã chọn</string>
+    <string name="set_del_file_period2">sau một số ngày đã chỉ định.</string>
+    <string name="set_del_file_period0">Thiết lập thời gian xóa tập tin.</string>
+    <string name="copied_text">Đã sao chép.</string>
+    <string name="empty_visual_record_dir">Thư mục ghi hình</string>
+    <string name="send_link_to_dev"><![CDATA[<br><br>Và gửi những liên kết hoạt động này cho nhà phát triển để anh ta có thể sửa lỗi ứng dụng.<br>
+<font color = "#FF1744">Nhắc nhở: Không gửi liên kết có quyền quản trị viên.</font><br>]]></string>
+    <string name="ads_button_text">Cho phép quảng cáo cá nhân hóa (chia sẻ ID quảng cáo)</string>
+    <string name="skip_start_chekbox_text">Bỏ qua màn hình này khi khởi động</string>
+    <string name="hide_scale_chekbox_text">Ẩn kết quả tỉ lệ</string>
+    <string name="privacy_checkbox">Tôi xác nhận rằng tôi đã đọc và đồng ý với các điều khoản trong Chính sách bảo mật.</string>
+    <string name="ad_id_title">Cài đặt hiển thị quảng cáo</string>
+    <string name="ad_id_allow">Cho phép</string>
+    <string name="ad_id_turn_off">Tắt</string>
+    <string name="ad_id_text"><![CDATA[<br><br>Chúng tôi sử dụng một mạng quảng cáo để hiển thị quảng cáo.<br><br>
+Mạng quảng cáo có thể thu thập dữ liệu, bao gồm mã định danh quảng cáo của thiết bị bạn, để hiển thị quảng cáo cá nhân hóa.<br><br>
+Bạn có thể cho phép hoặc tắt cá nhân hóa quảng cáo.<br><br>
+Nếu bạn tắt cá nhân hóa, chúng tôi sẽ chỉ hiển thị quảng cáo không cá nhân hóa.<br><br>]]></string>
+
+
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="play_btn_desc">přehrát</string>
+    <string name="record_btn_desc">nahrávat</string>
+    <string name="add_bookmark_btn_desc">přidat záložku</string>
+    <string name="remove_bookmark_btn_desc">odebrat záložku</string>
+    <string name="clear_files_btn_desc">vymazat soubory</string>
+    <string name="clear_files_path_desc">cesta k souborům ke smazání</string>
+    <string name="clear_files_plus_btn_desc">zvýšit počet souborů</string>
+    <string name="clear_files_minus_btn_desc">snížit počet souborů</string>
+    <string name="clear_files_value_desc">mazat soubory po</string>
+    <string name="channel_name">Název kanálu</string>
+    <string name="link">Odkaz</string>
+    <string name="dialog_empty_input">&#x1F53A;</string>
+    <string name="okey">OK</string>
+    <string name="cancel">Zrušit</string>
+    <string name="delete">Smazat</string>
+    <string name="mute">ztlumit</string>
+    <string name="falied_open_link">Nepodařilo se přehrát odkaz</string>
+    <string name="falied_link_format">Nepodporovaný formát odkazu</string>
+    <string name="choose_bookmark_delete">Vyberte záložky k odstranění</string>
+    <string name="choose_bookmark_play">Vyberte záložku k přehrání</string>
+    <string name="add_bookmark">Přidejte záložku</string>
+    <string name="player1desc">přehrávač 1</string>
+    <string name="player2desc">přehrávač 2</string>
+    <string name="player3desc">přehrávač 3</string>
+    <string name="player4desc">přehrávač 4</string>
+    <string name="disclamer_title">Pozor</string>
+    <string name="disclamer_body">Chystáte se navštívit externí web, který obsahuje odkazy přidané uživateli. Aplikace nekontroluje jejich obsah, dostupnost ani právní soulad. Používáte na vlastní riziko. Pokračovat?</string>
+    <string name="find_links_in_file">Přidat odkazy nalezené v souboru?</string>
+    <string name="not_find_links_in_file">Odkazy nebyly nalezeny</string>
+    <string name="check_all_bookmark_for_del">Vše</string>
+    <string name="not_available_yet">Tato funkce zatím není dostupná</string>
+    <string name="not_find_links_in_file_rules"><![CDATA[<br>Nepodařilo se najít odkazy v určeném souboru.<br>
+Odkazy v souboru musí být zapsány ve formátu:<br><br><font color = "#006064">
+Název kanálu<br>
+Odkaz<br>
+Název kanálu<br>
+Odkaz<br>
+Název kanálu<br>
+Odkaz</font><br><br>
+Nebo ve standardním formátu m3u<br>]]></string>
+    <string name="errors_del_videos">Došlo k mnoha chybám při mazání starých nahrávek.</string>
+    <string name="set_del_file_period1">Automaticky mazat soubory ze složky vybraného přehrávače</string>
+    <string name="set_del_file_period2">po stanoveném počtu dnů.</string>
+    <string name="set_del_file_period0">Nastavit období mazání souborů.</string>
+    <string name="copied_text">Zkopírováno.</string>
+    <string name="empty_visual_record_dir">Složka se záznamy</string>
+    <string name="send_link_to_dev"><![CDATA[<br><br>A pošlete tyto funkční odkazy vývojáři, aby mohl opravit aplikaci.<br>
+<font color = "#FF1744">Upozornění: Neposílejte odkazy s administrátorskými právy.</font><br>]]></string>
+    <string name="ads_button_text">Povolit personalizované reklamy (sdílet reklamní ID)</string>
+    <string name="skip_start_chekbox_text">Přeskočit tuto obrazovku při spuštění</string>
+    <string name="hide_scale_chekbox_text">Skrýt výsledek měření</string>
+    <string name="privacy_checkbox">Potvrzuji, že jsem si přečetl/a a souhlasím s podmínkami Zásad ochrany osobních údajů.</string>
+    <string name="ad_id_title">Nastavení zobrazování reklam</string>
+    <string name="ad_id_allow">Povolit</string>
+    <string name="ad_id_turn_off">Vypnout</string>
+    <string name="ad_id_text"><![CDATA[<br><br>Používáme reklamní síť pro zobrazení reklamy.<br><br>
+Reklamní síť může shromažďovat data, včetně reklamního ID vašeho zařízení, pro zobrazování personalizované reklamy.<br><br>
+Můžete povolit nebo vypnout personalizaci reklamy.<br><br>
+Pokud vypnete personalizaci, budeme zobrazovat pouze nepřizpůsobenou reklamu.<br><br>]]></string>
+
+</resources>

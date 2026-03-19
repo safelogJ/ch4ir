@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="play_btn_desc">odtwórz</string>
+    <string name="record_btn_desc">nagrywanie</string>
+    <string name="add_bookmark_btn_desc">dodaj zakładkę</string>
+    <string name="remove_bookmark_btn_desc">usuń zakładkę</string>
+    <string name="clear_files_btn_desc">wyczyść pliki</string>
+    <string name="clear_files_path_desc">ścieżka do plików do wyczyszczenia</string>
+    <string name="clear_files_plus_btn_desc">zwiększ liczbę plików</string>
+    <string name="clear_files_minus_btn_desc">zmniejsz liczbę plików</string>
+    <string name="clear_files_value_desc">usuwać pliki po</string>
+    <string name="channel_name">Nazwa kanału</string>
+    <string name="link">Link</string>
+    <string name="dialog_empty_input">&#x1F53A;</string>
+    <string name="okey">OK</string>
+    <string name="cancel">Anuluj</string>
+    <string name="delete">Usuń</string>
+    <string name="mute">Wycisz</string>
+    <string name="falied_open_link">Nie udało się odtworzyć linku</string>
+    <string name="falied_link_format">Nieobsługiwany format linku</string>
+    <string name="choose_bookmark_delete">Wybierz zakładki do usunięcia</string>
+    <string name="choose_bookmark_play">Wybierz zakładkę do odtworzenia</string>
+    <string name="add_bookmark">Dodaj zakładkę</string>
+    <string name="player1desc">odtwarzacz 1</string>
+    <string name="player2desc">odtwarzacz 2</string>
+    <string name="player3desc">odtwarzacz 3</string>
+    <string name="player4desc">odtwarzacz 4</string>
+    <string name="disclamer_title">Uwaga</string>
+    <string name="disclamer_body">Przechodzisz na zewnętrzną stronę, która zawiera linki dodane przez użytkowników. Aplikacja nie kontroluje ich treści, działania ani zgodności z prawem. Używasz jej na własne ryzyko. Kontynuować?</string>
+    <string name="find_links_in_file">Dodać znalezione w pliku linki?</string>
+    <string name="not_find_links_in_file">Nie znaleziono linków</string>
+    <string name="check_all_bookmark_for_del">Wszystko</string>
+    <string name="not_available_yet">Ta funkcja nie jest jeszcze dostępna</string>
+    <string name="not_find_links_in_file_rules"><![CDATA[<br>Nie udało się znaleźć linków w podanym pliku.<br> Linki w pliku muszą być zapisane w formacie:<br><br><font color = "#006064"> Nazwa kanału<br> Link<br> Nazwa kanału<br> Link<br> Nazwa kanału<br> Link</font><br><br> Lub w standardowym formacie m3u<br>]]></string>
+    <string name="errors_del_videos">Wystąpiło wiele błędów podczas usuwania starych nagrań.</string>
+    <string name="set_del_file_period1">Automatycznie usuwać pliki z folderu wybranego odtwarzacza</string>
+    <string name="set_del_file_period2">po określonej liczbie dni.</string>
+    <string name="set_del_file_period0">Ustaw okres usuwania plików.</string>
+    <string name="copied_text">Skopiowano.</string>
+    <string name="empty_visual_record_dir">Folder z nagraniami</string>
+    <string name="send_link_to_dev"><![CDATA[<br><br>I wyślij te działające linki do dewelopera, aby mógł naprawić aplikację.<br> <font color = "#FF1744">Przypomnienie: nie wysyłaj linków z uprawnieniami administratora.</font><br>]]></string>
+    <string name="ads_button_text">Zezwól na spersonalizowane reklamy (przekazywanie identyfikatora reklamowego)</string>
+    <string name="skip_start_chekbox_text">Pomiń ten ekran przy uruchomieniu</string>
+    <string name="hide_scale_chekbox_text">Ukryj wynik skalowania</string>
+    <string name="privacy_checkbox">Potwierdzam, że przeczytałem(am) i zgadzam się z warunkami Polityki prywatności.</string>
+    <string name="ad_id_title">Ustawienia wyświetlania reklam</string>
+    <string name="ad_id_allow">Zezwól</string>
+    <string name="ad_id_turn_off">Wyłącz</string>
+    <string name="ad_id_text"><![CDATA[<br><br>Używamy sieci reklamowej do wyświetlania reklam.<br><br> Sieć reklamowa może zbierać dane, w tym identyfikator reklamowy Twojego urządzenia, w celu wyświetlania spersonalizowanych reklam.<br><br> Możesz zezwolić lub wyłączyć personalizację reklam.<br><br> Jeśli wyłączysz personalizację, będziemy wyświetlać tylko niespersonalizowane reklamy.<br><br>]]></string>
+</resources>

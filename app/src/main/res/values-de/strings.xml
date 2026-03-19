@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="play_btn_desc">abspielen</string>
+    <string name="record_btn_desc">aufnehmen</string>
+    <string name="add_bookmark_btn_desc">Lesezeichen hinzufügen</string>
+    <string name="remove_bookmark_btn_desc">Lesezeichen entfernen</string>
+    <string name="clear_files_btn_desc">Dateien löschen</string>
+    <string name="clear_files_path_desc">Pfad zu löschenden Dateien</string>
+    <string name="clear_files_plus_btn_desc">Dateienanzahl erhöhen</string>
+    <string name="clear_files_minus_btn_desc">Dateienanzahl verringern</string>
+    <string name="clear_files_value_desc">Dateien löschen nach</string>
+    <string name="channel_name">Kanalname</string>
+    <string name="link">Link</string>
+    <string name="dialog_empty_input">&#x1F53A;</string>
+    <string name="okey">OK</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="delete">Löschen</string>
+    <string name="mute">Stumm</string>
+    <string name="falied_open_link">Link konnte nicht wiedergegeben werden</string>
+    <string name="falied_link_format">Nicht unterstütztes Linkformat</string>
+    <string name="choose_bookmark_delete">Wähle Lesezeichen zum Löschen aus</string>
+    <string name="choose_bookmark_play">Wähle ein Lesezeichen zum Abspielen aus</string>
+    <string name="add_bookmark">Lesezeichen hinzufügen</string>
+    <string name="player1desc">Player 1</string>
+    <string name="player2desc">Player 2</string>
+    <string name="player3desc">Player 3</string>
+    <string name="player4desc">Player 4</string>
+    <string name="disclamer_title">Achtung</string>
+    <string name="disclamer_body">Sie sind dabei, eine externe Website mit von Benutzern hinzugefügten Links zu besuchen. Die App kontrolliert weder deren Inhalte, Verfügbarkeit noch rechtliche Konformität. Nutzung auf eigene Gefahr. Fortfahren?</string>
+    <string name="find_links_in_file">Gefundene Links in der Datei hinzufügen?</string>
+    <string name="not_find_links_in_file">Keine Links gefunden</string>
+    <string name="check_all_bookmark_for_del">Alle</string>
+    <string name="not_available_yet">Diese Funktion ist noch nicht verfügbar</string>
+    <string name="not_find_links_in_file_rules"><![CDATA[<br>Es konnten keine Links in der angegebenen Datei gefunden werden.<br>
+Links in der Datei müssen im folgenden Format geschrieben sein:<br><br><font color = "#006064">
+Kanalname<br>
+Link<br>
+Kanalname<br>
+Link<br>
+Kanalname<br>
+Link</font><br><br>
+Oder im Standard-m3u-Format<br>]]></string>
+    <string name="errors_del_videos">Beim Löschen alter Aufnahmen sind viele Fehler aufgetreten.</string>
+    <string name="set_del_file_period1">Dateien aus dem Ordner des gewählten Players automatisch löschen</string>
+    <string name="set_del_file_period2">nach einer bestimmten Anzahl von Tagen.</string>
+    <string name="set_del_file_period0">Zeitraum für das Löschen von Dateien festlegen.</string>
+    <string name="copied_text">Kopiert.</string>
+    <string name="empty_visual_record_dir">Ordner mit Aufnahmen</string>
+    <string name="send_link_to_dev"><![CDATA[<br><br>Und sende diese funktionierenden Links an den Entwickler, damit die App verbessert werden kann.<br>
+<font color = "#FF1744">Hinweis: Sende keine Links mit Administratorrechten.</font><br>]]></string>
+    <string name="ads_button_text">Personalisierte Werbung zulassen (Werbe-ID freigeben)</string>
+    <string name="skip_start_chekbox_text">Diesen Bildschirm beim Start überspringen</string>
+    <string name="hide_scale_chekbox_text">Skalenergebnis ausblenden</string>
+    <string name="privacy_checkbox">Ich bestätige, dass ich die Datenschutzrichtlinie gelesen habe und ihr zustimme.</string>
+    <string name="ad_id_title">Anzeigeneinstellungen</string>
+    <string name="ad_id_allow">Zulassen</string>
+    <string name="ad_id_turn_off">Deaktivieren</string>
+    <string name="ad_id_text"><![CDATA[<br><br>Wir verwenden ein Werbenetzwerk, um Anzeigen anzuzeigen.<br><br>
+Das Werbenetzwerk kann Daten sammeln, einschließlich der Werbe-ID Ihres Geräts, um personalisierte Anzeigen anzuzeigen.<br><br>
+Sie können Personalisierung aktivieren oder deaktivieren.<br><br>
+Wenn Sie die Personalisierung deaktivieren, zeigen wir nur nicht-personalisierte Werbung an.<br><br>]]></string>
+
+
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="play_btn_desc">播放</string>
+    <string name="record_btn_desc">录制</string>
+    <string name="add_bookmark_btn_desc">添加书签</string>
+    <string name="remove_bookmark_btn_desc">删除书签</string>
+    <string name="clear_files_btn_desc">清除文件</string>
+    <string name="clear_files_path_desc">待清除的文件路径</string>
+    <string name="clear_files_plus_btn_desc">增加文件数量</string>
+    <string name="clear_files_minus_btn_desc">减少文件数量</string>
+    <string name="clear_files_value_desc">删除文件时间</string>
+    <string name="channel_name">频道名称</string>
+    <string name="link">链接</string>
+    <string name="dialog_empty_input">&#x1F53A;</string>
+    <string name="okey">确定</string>
+    <string name="cancel">取消</string>
+    <string name="delete">删除</string>
+    <string name="mute">静音</string>
+    <string name="falied_open_link">无法播放链接</string>
+    <string name="falied_link_format">不支持的链接格式</string>
+    <string name="choose_bookmark_delete">选择要删除的书签</string>
+    <string name="choose_bookmark_play">选择要播放的书签</string>
+    <string name="add_bookmark">添加书签</string>
+    <string name="player1desc">播放器 1</string>
+    <string name="player2desc">播放器 2</string>
+    <string name="player3desc">播放器 3</string>
+    <string name="player4desc">播放器 4</string>
+    <string name="disclamer_title">注意</string>
+    <string name="disclamer_body">您即将访问一个包含用户添加链接的外部网站。应用程序不控制这些链接的内容、可用性或合法性。请自行承担风险。是否继续？</string>
+    <string name="find_links_in_file">要添加文件中找到的链接吗？</string>
+    <string name="not_find_links_in_file">未找到链接</string>
+    <string name="check_all_bookmark_for_del">全部</string>
+    <string name="not_available_yet">此功能暂不可用</string>
+    <string name="not_find_links_in_file_rules"><![CDATA[<br>无法在指定文件中找到链接。<br>
+文件中的链接必须按照以下格式编写:<br><br><font color = "#006064">
+频道名称<br>
+链接<br>
+频道名称<br>
+链接<br>
+频道名称<br>
+链接</font><br><br>
+或者采用标准 m3u 格式<br>]]></string>
+    <string name="errors_del_videos">删除旧录制时发生多个错误。</string>
+    <string name="set_del_file_period1">自动从所选播放器的文件夹中删除文件</string>
+    <string name="set_del_file_period2">在设定的天数后。</string>
+    <string name="set_del_file_period0">设置文件删除周期。</string>
+    <string name="copied_text">已复制。</string>
+    <string name="empty_visual_record_dir">录制文件夹</string>
+    <string name="send_link_to_dev"><![CDATA[<br><br>请将这些可用的链接发送给开发者，以便修复应用。<br>
+<font color = "#FF1744">提醒：不要发送具有管理员权限的链接。</font><br>]]></string>
+    <string name="ads_button_text">允许个性化广告（共享广告ID）</string>
+    <string name="skip_start_chekbox_text">启动时跳过此屏幕</string>
+    <string name="hide_scale_chekbox_text">隐藏刻度结果</string>
+    <string name="privacy_checkbox">我确认已阅读并同意隐私政策的条款。</string>
+    <string name="ad_id_title">广告显示设置</string>
+    <string name="ad_id_allow">允许</string>
+    <string name="ad_id_turn_off">关闭</string>
+    <string name="ad_id_text"><![CDATA[<br><br>我们使用广告网络展示广告。<br><br>
+广告网络可能会收集数据，包括您的设备广告标识符，以展示个性化广告。<br><br>
+您可以 允许 或 禁用 个性化广告。<br><br>
+如果您禁用个性化广告，我们将只展示非个性化广告。<br><br>]]></string>
+
+
+</resources>

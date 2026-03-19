@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="play_btn_desc">চালান</string>
+    <string name="record_btn_desc">রেকর্ড</string>
+    <string name="add_bookmark_btn_desc">বুকমার্ক যোগ করুন</string>
+    <string name="remove_bookmark_btn_desc">বুকমার্ক সরান</string>
+    <string name="clear_files_btn_desc">ফাইল মুছুন</string>
+    <string name="clear_files_path_desc">পরিষ্কারের জন্য ফাইল পথ</string>
+    <string name="clear_files_plus_btn_desc">ফাইলের সংখ্যা বাড়ান</string>
+    <string name="clear_files_minus_btn_desc">ফাইলের সংখ্যা কমান</string>
+    <string name="clear_files_value_desc">ফাইল মুছুন</string>
+    <string name="channel_name">চ্যানেলের নাম</string>
+    <string name="link">লিংক</string>
+    <string name="dialog_empty_input">&#x1F53A;</string>
+    <string name="okey">ঠিক আছে</string>
+    <string name="cancel">বাতিল</string>
+    <string name="delete">মুছে ফেলুন</string>
+    <string name="mute">নিঃশব্দ</string>
+    <string name="falied_open_link">লিংক চালানো যায়নি</string>
+    <string name="falied_link_format">অসহায় লিঙ্ক ফর্ম্যাট</string>
+    <string name="choose_bookmark_delete">মুছতে বুকমার্ক বেছে নিন</string>
+    <string name="choose_bookmark_play">চালাতে বুকমার্ক বেছে নিন</string>
+    <string name="add_bookmark">বুকমার্ক যোগ করুন</string>
+    <string name="player1desc">প্লেয়ার ১</string>
+    <string name="player2desc">প্লেয়ার ২</string>
+    <string name="player3desc">প্লেয়ার ৩</string>
+    <string name="player4desc">প্লেয়ার ৪</string>
+    <string name="disclamer_title">সতর্কতা</string>
+    <string name="disclamer_body">আপনি এমন একটি বাইরের ওয়েবসাইটে যেতে যাচ্ছেন যেখানে ব্যবহারকারীদের দেওয়া লিংক রয়েছে। অ্যাপ্লিকেশন এই লিংকের বিষয়বস্তু, কার্যকারিতা বা আইনগত সম্মতি নিয়ন্ত্রণ করে না। নিজের ঝুঁকিতে ব্যবহার করুন। চালিয়ে যাবেন?</string>
+    <string name="find_links_in_file">ফাইলে পাওয়া লিঙ্কগুলো যোগ করবেন?</string>
+    <string name="not_find_links_in_file">কোনো লিঙ্ক পাওয়া যায়নি</string>
+    <string name="check_all_bookmark_for_del">সব</string>
+    <string name="not_available_yet">এই সুবিধাটি এখনো উপলভ্য নয়</string>
+    <string name="not_find_links_in_file_rules"><![CDATA[<br>নির্দিষ্ট ফাইলে কোনো লিঙ্ক খুঁজে পাওয়া যায়নি।<br>
+ফাইলের লিঙ্কগুলি এই ফরম্যাটে লেখা থাকতে হবে:<br><br><font color = "#006064">
+চ্যানেলের নাম<br>
+লিঙ্ক<br>
+চ্যানেলের নাম<br>
+লিঙ্ক<br>
+চ্যানেলের নাম<br>
+লিঙ্ক</font><br><br>
+অথবা স্ট্যান্ডার্ড m3u ফরম্যাটে<br>]]></string>
+
+    <string name="errors_del_videos">পুরাতন রেকর্ড মোছার সময় অনেক ত্রুটি হয়েছে।</string>
+    <string name="set_del_file_period1">নির্বাচিত প্লেয়ারের ফোল্ডার থেকে ফাইল স্বয়ংক্রিয়ভাবে মুছুন</string>
+    <string name="set_del_file_period2">নির্দিষ্ট দিনের পরে।</string>
+    <string name="set_del_file_period0">ফাইল মোছার সময়সীমা নির্ধারণ করুন।</string>
+    <string name="copied_text">কপি হয়েছে।</string>
+    <string name="empty_visual_record_dir">রেকর্ডিং ফোল্ডার</string>
+    <string name="send_link_to_dev"><![CDATA[<br><br>এই কাজ করা লিংকগুলো ডেভেলপারকে পাঠান যাতে অ্যাপটি ঠিক করা যায়।<br>
+<font color = "#FF1744">মনে রাখবেন: অ্যাডমিন অধিকার সহ লিংক পাঠাবেন না।</font><br>]]></string>
+    <string name="ads_button_text">ব্যক্তিগতকৃত বিজ্ঞাপন অনুমোদন দিন (বিজ্ঞাপন আইডি ভাগ করুন)</string>
+    <string name="skip_start_chekbox_text">শুরুতে এই স্ক্রীনটি এড়িয়ে যান</string>
+    <string name="hide_scale_chekbox_text">স্কেল ফলাফল লুকান</string>
+    <string name="privacy_checkbox">আমি নিশ্চিত করছি যে আমি গোপনীয়তা নীতির শর্তাদি পড়েছি এবং এর সাথে একমত।</string>
+    <string name="ad_id_title">প্রদর্শিত বিজ্ঞাপনের সেটিংস</string>
+    <string name="ad_id_allow">অনুমতি দিন</string>
+    <string name="ad_id_turn_off">বন্ধ করুন</string>
+    <string name="ad_id_text"><![CDATA[<br><br>আমরা বিজ্ঞাপন প্রদর্শনের জন্য একটি বিজ্ঞাপন নেটওয়ার্ক ব্যবহার করি।<br><br>
+বিজ্ঞাপন নেটওয়ার্ক আপনার ডিভাইসের বিজ্ঞাপন আইডি সহ ডেটা সংগ্রহ করতে পারে, যাতে কাস্টম বিজ্ঞাপন প্রদর্শন করা হয়।<br><br>
+আপনি অনুমতি দিতে বা বন্ধ করতে পারেন কাস্টম বিজ্ঞাপন প্রদর্শন।<br><br>
+আপনি যদি কাস্টম বিজ্ঞাপন বন্ধ করেন, তবে আমরা শুধুমাত্র অ-কাস্টম বিজ্ঞাপন প্রদর্শন করব।<br><br>]]></string>
+
+</resources>

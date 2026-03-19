@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menuOuter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+
+        android:id="@+id/buttonsMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/menuHolder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/openLinkOrStopBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:clickable="true"
+            android:contentDescription="@string/play_btn_desc"
+            android:focusable="true"
+            app:backgroundTint="@color/purple_900"
+            app:rippleColor="@color/purple_600"
+            app:tint="@color/blue_50" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addLinkBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:clickable="true"
+            android:contentDescription="@string/add_bookmark_btn_desc"
+            android:focusable="true"
+            app:backgroundTint="@color/purple_900"
+            app:rippleColor="@color/purple_600"
+            app:srcCompat="@drawable/bookmark_add_48px"
+            app:tint="@color/blue_50" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/removeLinkBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:clickable="true"
+            android:contentDescription="@string/remove_bookmark_btn_desc"
+            android:focusable="true"
+            app:backgroundTint="@color/purple_900"
+            app:rippleColor="@color/purple_600"
+            app:srcCompat="@drawable/bookmark_remove_48px"
+            app:tint="@color/blue_50" />
+
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/menuHolder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/menuEmptyText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/menuPlayTextScroller"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_margin="12dp"
+            android:layout_marginTop="13dp"
+            android:fillViewport="true"
+            android:overScrollMode="ifContentScrolls"
+            android:scrollbars="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/menuPlayText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:contentDescription="@string/play_resource_desc"
+                android:focusable="true"
+                android:fontFamily="serif"
+                android:textColor="@color/teal_text"
+                android:textSize="20sp" />
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/menuEmptyText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/menuHolder"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/menuHolder" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/muteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:clickable="true"
+        android:contentDescription="@string/mute"
+        android:focusable="true"
+        app:backgroundTint="@color/purple_900"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonsMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonsMenu"
+        app:layout_constraintTop_toTopOf="@+id/buttonsMenu"
+        app:rippleColor="@color/purple_600"
+        app:srcCompat="@drawable/volume_up_48px"
+        app:tint="@color/blue_50" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

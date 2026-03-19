@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="play_btn_desc">lire</string>
+    <string name="record_btn_desc">enregistrer</string>
+    <string name="add_bookmark_btn_desc">ajouter un signet</string>
+    <string name="remove_bookmark_btn_desc">supprimer le signet</string>
+    <string name="clear_files_btn_desc">effacer les fichiers</string>
+    <string name="clear_files_path_desc">chemin des fichiers à effacer</string>
+    <string name="clear_files_plus_btn_desc">augmenter le nombre de fichiers</string>
+    <string name="clear_files_minus_btn_desc">diminuer le nombre de fichiers</string>
+    <string name="clear_files_value_desc">supprimer les fichiers après</string>
+    <string name="channel_name">Nom de la chaîne</string>
+    <string name="link">Lien</string>
+    <string name="dialog_empty_input">&#x1F53A;</string>
+    <string name="okey">OK</string>
+    <string name="cancel">Annuler</string>
+    <string name="delete">Supprimer</string>
+    <string name="mute">Muet</string>
+    <string name="falied_open_link">Échec de la lecture du lien</string>
+    <string name="falied_link_format">Format de lien non pris en charge</string>
+    <string name="choose_bookmark_delete">Sélectionnez les signets à supprimer</string>
+    <string name="choose_bookmark_play">Sélectionnez un signet à lire</string>
+    <string name="add_bookmark">Ajoutez un signet</string>
+    <string name="player1desc">lecteur 1</string>
+    <string name="player2desc">lecteur 2</string>
+    <string name="player3desc">lecteur 3</string>
+    <string name="player4desc">lecteur 4</string>
+    <string name="disclamer_title">Attention</string>
+    <string name="disclamer_body">Vous êtes sur le point de visiter un site externe contenant des liens ajoutés par les utilisateurs. L\'application ne contrôle pas leur contenu, leur disponibilité ou leur conformité légale. Utilisez à vos risques et périls. Continuer ?</string>
+    <string name="find_links_in_file">Ajouter les liens trouvés dans le fichier ?</string>
+    <string name="not_find_links_in_file">Aucun lien trouvé</string>
+    <string name="check_all_bookmark_for_del">Tous</string>
+    <string name="not_available_yet">Cette fonctionnalité n’est pas encore disponible</string>
+    <string name="not_find_links_in_file_rules"><![CDATA[<br>Impossible de trouver des liens dans le fichier spécifié.<br>
+Les liens dans le fichier doivent être écrits au format :<br><br><font color = "#006064">
+Nom de la chaîne<br>
+Lien<br>
+Nom de la chaîne<br>
+Lien<br>
+Nom de la chaîne<br>
+Lien</font><br><br>
+Ou au format m3u standard<br>]]></string>
+    <string name="errors_del_videos">De nombreuses erreurs se sont produites lors de la suppression des anciennes vidéos.</string>
+    <string name="set_del_file_period1">Supprimer automatiquement les fichiers du dossier du lecteur sélectionné</string>
+    <string name="set_del_file_period2">après un certain nombre de jours.</string>
+    <string name="set_del_file_period0">Définir la période de suppression des fichiers.</string>
+    <string name="copied_text">Copié.</string>
+    <string name="empty_visual_record_dir">Dossier d\'enregistrements</string>
+    <string name="send_link_to_dev"><![CDATA[<br><br>Et envoyez ces liens fonctionnels au développeur pour qu\’il puisse corriger l\’application.<br>
+<font color = "#FF1744">Rappel : n’envoyez pas de liens avec des droits administrateur.</font><br>]]></string>
+    <string name="ads_button_text">Autoriser les publicités personnalisées (partager l\'identifiant publicitaire)</string>
+    <string name="skip_start_chekbox_text">Ignorer cet écran au démarrage</string>
+    <string name="hide_scale_chekbox_text">Masquer le résultat de l’échelle</string>
+    <string name="privacy_checkbox">Je confirme avoir lu et accepté les termes de la politique de confidentialité.</string>
+    <string name="ad_id_title">Paramètres d’affichage des publicités</string>
+    <string name="ad_id_allow">Autoriser</string>
+    <string name="ad_id_turn_off">Désactiver</string>
+    <string name="ad_id_text"><![CDATA[<br><br>Nous utilisons un réseau publicitaire pour afficher des annonces.<br><br>
+Le réseau publicitaire peut collecter des données, y compris l\'identifiant publicitaire de votre appareil, afin d\'afficher des publicités personnalisées.<br><br>
+Vous pouvez activer ou désactiver la personnalisation des publicités.<br><br>
+Si vous désactivez la personnalisation, nous n\'afficherons que des publicités non personnalisées.<br><br>]]></string>
+
+
+</resources>

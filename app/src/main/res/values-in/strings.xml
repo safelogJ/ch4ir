@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="play_btn_desc">putar</string>
+    <string name="record_btn_desc">rekam</string>
+    <string name="add_bookmark_btn_desc">tambah bookmark</string>
+    <string name="remove_bookmark_btn_desc">hapus bookmark</string>
+    <string name="clear_files_btn_desc">hapus file</string>
+    <string name="clear_files_path_desc">jalur ke file untuk dihapus</string>
+    <string name="clear_files_plus_btn_desc">tambah jumlah file</string>
+    <string name="clear_files_minus_btn_desc">kurangi jumlah file</string>
+    <string name="clear_files_value_desc">hapus file setelah</string>
+    <string name="channel_name">Nama saluran</string>
+    <string name="link">Tautan</string>
+    <string name="dialog_empty_input">&#x1F53A;</string>
+    <string name="okey">OK</string>
+    <string name="cancel">Batal</string>
+    <string name="delete">Hapus</string>
+    <string name="mute">Bisukan</string>
+    <string name="falied_open_link">Gagal memutar tautan</string>
+    <string name="falied_link_format">Format tautan tidak didukung</string>
+    <string name="choose_bookmark_delete">Pilih bookmark untuk dihapus</string>
+    <string name="choose_bookmark_play">Pilih bookmark untuk diputar</string>
+    <string name="add_bookmark">Tambahkan bookmark</string>
+    <string name="player1desc">pemutar 1</string>
+    <string name="player2desc">pemutar 2</string>
+    <string name="player3desc">pemutar 3</string>
+    <string name="player4desc">pemutar 4</string>
+    <string name="disclamer_title">Perhatian</string>
+    <string name="disclamer_body">Anda akan diarahkan ke situs eksternal yang berisi tautan yang ditambahkan oleh pengguna. Aplikasi tidak mengontrol konten, ketersediaan, atau kesesuaian hukum dari tautan tersebut. Gunakan dengan risiko Anda sendiri. Lanjutkan?</string>
+    <string name="find_links_in_file">Tambahkan tautan yang ditemukan dalam file?</string>
+    <string name="not_find_links_in_file">Tidak ada tautan ditemukan</string>
+    <string name="check_all_bookmark_for_del">Semua</string>
+    <string name="not_available_yet">Fitur ini belum tersedia</string>
+    <string name="not_find_links_in_file_rules"><![CDATA[<br>Tidak dapat menemukan tautan dalam file yang ditentukan.<br>
+    Tautan dalam file harus ditulis dalam format:<br><br><font color = "#006064">
+    Nama saluran<br>
+    Tautan<br>
+    Nama saluran<br>
+    Tautan<br>
+    Nama saluran<br>
+    Tautan</font><br><br>
+    Atau dalam format standar m3u<br>]]></string>
+    <string name="errors_del_videos">Terjadi banyak kesalahan saat menghapus rekaman lama.</string>
+    <string name="set_del_file_period1">Hapus file secara otomatis dari folder pemutar yang dipilih</string>
+    <string name="set_del_file_period2">setelah jumlah hari yang ditentukan.</string>
+    <string name="set_del_file_period0">Tetapkan periode penghapusan file.</string>
+    <string name="copied_text">Disalin.</string>
+    <string name="empty_visual_record_dir">Folder rekaman</string>
+    <string name="send_link_to_dev"><![CDATA[<br><br>Kirim tautan yang berfungsi ini ke pengembang agar dia dapat memperbaiki aplikasi.<br>
+<font color = "#FF1744">Pengingat: jangan kirim tautan dengan hak administrator.</font><br>]]></string>
+    <string name="ads_button_text">Izinkan iklan yang dipersonalisasi (bagikan ID iklan)</string>
+    <string name="skip_start_chekbox_text">Lewati layar ini saat memulai</string>
+    <string name="hide_scale_chekbox_text">Sembunyikan hasil pembesaran</string>
+    <string name="privacy_checkbox">Saya mengonfirmasi bahwa saya telah membaca dan menyetujui Kebijakan Privasi.</string>
+    <string name="ad_id_title">Pengaturan iklan yang ditampilkan</string>
+    <string name="ad_id_allow">Izinkan</string>
+    <string name="ad_id_turn_off">Matikan</string>
+    <string name="ad_id_text"><![CDATA[<br><br>Kami menggunakan jaringan iklan untuk menampilkan iklan.<br><br>
+Jaringan iklan dapat mengumpulkan data, termasuk ID iklan perangkat Anda, untuk menampilkan iklan yang dipersonalisasi.<br><br>
+Anda dapat mengizinkan atau menonaktifkan personalisasi iklan.<br><br>
+Jika Anda menonaktifkan personalisasi, kami hanya akan menampilkan iklan yang tidak dipersonalisasi.<br><br>]]></string>
+</resources>

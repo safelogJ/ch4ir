@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/startMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_back"
+    tools:context=".StartActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/startConstraintHolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <FrameLayout
+            android:id="@+id/startFrame"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/startOkButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ScrollView
+                android:id="@+id/startScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="8dp">
+
+                    <!-- Чекбоксы -->
+
+                    <CheckBox
+                        android:id="@+id/skipCheckBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/skip_start_chekbox_text"
+                        android:textColor="@color/blue_100" />
+
+                    <CheckBox
+                        android:id="@+id/hideScaleCheckBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hide_scale_chekbox_text"
+                        android:textColor="@color/blue_100" />
+
+                    <!-- Текст -->
+                    <TextView
+                        android:id="@+id/startTextView0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="serif"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/blue_100"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </ScrollView>
+        </FrameLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/startAdsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/start_button_youtube"
+            android:src="@drawable/youtube_activity_48px"
+            app:backgroundTint="@color/purple_900"
+            app:elevation="3dp"
+            app:fabSize="mini"
+            app:layout_constraintBottom_toBottomOf="@+id/startOkButton"
+            app:layout_constraintEnd_toStartOf="@+id/startOkButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:rippleColor="@color/purple_600"
+            app:tint="@color/blue_50" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/startOkButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/start_button_ok"
+            android:src="@drawable/live_tv_48px"
+            app:backgroundTint="@color/purple_900"
+            app:elevation="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:rippleColor="@color/purple_600"
+            app:tint="@color/blue_50" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/startPrivacyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/start_button_privacy"
+            android:src="@drawable/privacy_tip_48px"
+            app:backgroundTint="@color/purple_900"
+            app:elevation="3dp"
+            app:fabSize="mini"
+            app:layout_constraintBottom_toBottomOf="@+id/startOkButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/startOkButton"
+            app:rippleColor="@color/purple_600"
+            app:tint="@color/blue_50" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintHolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineH25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineH50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineH75"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <FrameLayout
+            android:id="@+id/exoFrame1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/frame_background_border_free"
+            android:keepScreenOn="true"
+            android:padding="4dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideLineH25"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.media3.ui.PlayerView
+                android:id="@+id/exoView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:backgroundTint="@android:color/transparent"
+                android:clickable="true"
+                android:contentDescription="@string/player1desc"
+                android:focusable="true"
+                app:image_display_mode="fill"
+                app:keep_content_on_player_reset="true"
+                app:resize_mode="fit"
+                app:show_buffering="never"
+                app:surface_type="texture_view"
+                app:use_controller="false" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/exoFrame2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/frame_background_border_free"
+            android:keepScreenOn="true"
+            android:padding="4dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideLineH50"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideLineH25">
+
+
+            <androidx.media3.ui.PlayerView
+                android:id="@+id/exoView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:backgroundTint="@android:color/transparent"
+                android:clickable="true"
+                android:contentDescription="@string/player2desc"
+                android:focusable="true"
+                app:image_display_mode="fill"
+                app:keep_content_on_player_reset="true"
+                app:resize_mode="fit"
+                app:show_buffering="never"
+                app:surface_type="texture_view"
+                app:use_controller="false" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/exoFrame3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/frame_background_border_free"
+            android:keepScreenOn="true"
+            android:padding="4dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideLineH75"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideLineH50">
+
+
+            <androidx.media3.ui.PlayerView
+                android:id="@+id/exoView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:backgroundTint="@android:color/transparent"
+                android:clickable="true"
+                android:contentDescription="@string/player3desc"
+                android:focusable="true"
+                app:image_display_mode="fill"
+                app:keep_content_on_player_reset="true"
+                app:resize_mode="fit"
+                app:show_buffering="never"
+                app:surface_type="texture_view"
+                app:use_controller="false" />
+
+            </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/exoFrame4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/frame_background_border_free"
+            android:keepScreenOn="true"
+            android:padding="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideLineH75">
+
+
+            <androidx.media3.ui.PlayerView
+                android:id="@+id/exoView4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:backgroundTint="@android:color/transparent"
+                android:clickable="true"
+                android:contentDescription="@string/player4desc"
+                android:focusable="true"
+                app:image_display_mode="fill"
+                app:keep_content_on_player_reset="true"
+                app:resize_mode="fit"
+                app:show_buffering="never"
+                app:surface_type="texture_view"
+                app:use_controller="false" />
+
+        </FrameLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

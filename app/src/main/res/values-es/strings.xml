@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="play_btn_desc">reproducir</string>
+    <string name="record_btn_desc">grabar</string>
+    <string name="add_bookmark_btn_desc">agregar marcador</string>
+    <string name="remove_bookmark_btn_desc">eliminar marcador</string>
+    <string name="clear_files_btn_desc">borrar archivos</string>
+    <string name="clear_files_path_desc">ruta de archivos a borrar</string>
+    <string name="clear_files_plus_btn_desc">aumentar cantidad de archivos</string>
+    <string name="clear_files_minus_btn_desc">disminuir cantidad de archivos</string>
+    <string name="clear_files_value_desc">borrar archivos después de</string>
+    <string name="channel_name">Nombre del canal</string>
+    <string name="link">Enlace</string>
+    <string name="dialog_empty_input">&#x1F53A;</string>
+    <string name="okey">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="delete">Eliminar</string>
+    <string name="mute">Silencio</string>
+    <string name="falied_open_link">No se pudo reproducir el enlace</string>
+    <string name="falied_link_format">Formato de enlace no compatible</string>
+    <string name="choose_bookmark_delete">Selecciona los marcadores a eliminar</string>
+    <string name="choose_bookmark_play">Selecciona un marcador para reproducir</string>
+    <string name="add_bookmark">Agregar marcador</string>
+    <string name="player1desc">reproductor 1</string>
+    <string name="player2desc">reproductor 2</string>
+    <string name="player3desc">reproductor 3</string>
+    <string name="player4desc">reproductor 4</string>
+    <string name="disclamer_title">Atención</string>
+    <string name="disclamer_body">Está a punto de visitar un sitio externo que contiene enlaces agregados por los usuarios. La aplicación no controla su contenido, disponibilidad ni cumplimiento legal. Úselo bajo su propio riesgo. ¿Continuar?</string>
+    <string name="find_links_in_file">¿Agregar los enlaces encontrados en el archivo?</string>
+    <string name="not_find_links_in_file">No se encontraron enlaces</string>
+    <string name="check_all_bookmark_for_del">Todos</string>
+    <string name="not_available_yet">Esta función aún no está disponible</string>
+    <string name="not_find_links_in_file_rules"><![CDATA[<br>No se pudieron encontrar enlaces en el archivo especificado.<br>
+Los enlaces en el archivo deben estar escritos en el formato:<br><br><font color = "#006064">
+Nombre del canal<br>
+Enlace<br>
+Nombre del canal<br>
+Enlace<br>
+Nombre del canal<br>
+Enlace</font><br><br>
+O en formato estándar m3u<br>]]></string>
+    <string name="errors_del_videos">Se produjeron varios errores al eliminar grabaciones antiguas.</string>
+    <string name="set_del_file_period1">Eliminar archivos automáticamente de la carpeta del reproductor seleccionado</string>
+    <string name="set_del_file_period2">después de un número determinado de días.</string>
+    <string name="set_del_file_period0">Establecer período de eliminación de archivos.</string>
+    <string name="copied_text">Copiado.</string>
+    <string name="empty_visual_record_dir">Carpeta de grabaciones</string>
+    <string name="send_link_to_dev"><![CDATA[<br><br>Y envía estos enlaces funcionales al desarrollador para que pueda mejorar la aplicación.<br>
+<font color = "#FF1744">Aviso: No envíes enlaces con derechos de administrador.</font><br>]]></string>
+    <string name="ads_button_text">Permitir anuncios personalizados (compartir ID de publicidad)</string>
+    <string name="skip_start_chekbox_text">Omitir esta pantalla al iniciar</string>
+    <string name="hide_scale_chekbox_text">Ocultar el resultado de la escala</string>
+    <string name="privacy_checkbox">Confirmo que he leído y acepto los términos de la Política de Privacidad.</string>
+    <string name="ad_id_title">Configuración de anuncios mostrados</string>
+    <string name="ad_id_allow">Permitir</string>
+    <string name="ad_id_turn_off">Desactivar</string>
+    <string name="ad_id_text"><![CDATA[<br><br>Utilizamos una red publicitaria para mostrar anuncios.<br><br>
+La red publicitaria puede recopilar datos, incluidos el identificador publicitario de su dispositivo, para mostrar anuncios personalizados.<br><br>
+Puede permitir o desactivar la personalización de los anuncios.<br><br>
+Si desactiva la personalización, solo se mostrarán anuncios no personalizados.<br><br>]]></string>
+
+
+</resources>

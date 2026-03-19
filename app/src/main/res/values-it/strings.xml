@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="play_btn_desc">riproduci</string>
+    <string name="record_btn_desc">registra</string>
+    <string name="add_bookmark_btn_desc">aggiungi segnalibro</string>
+    <string name="remove_bookmark_btn_desc">rimuovi segnalibro</string>
+    <string name="clear_files_btn_desc">cancella file</string>
+    <string name="clear_files_path_desc">percorso dei file da cancellare</string>
+    <string name="clear_files_plus_btn_desc">aumenta il numero di file</string>
+    <string name="clear_files_minus_btn_desc">diminuisci il numero di file</string>
+    <string name="clear_files_value_desc">cancella i file dopo</string>
+    <string name="channel_name">Nome del canale</string>
+    <string name="link">Link</string>
+    <string name="dialog_empty_input">&#x1F53A;</string>
+    <string name="okey">OK</string>
+    <string name="cancel">Annulla</string>
+    <string name="delete">Elimina</string>
+    <string name="mute">Muto</string>
+    <string name="falied_open_link">Impossibile riprodurre il link</string>
+    <string name="falied_link_format">Formato del link non supportato</string>
+    <string name="choose_bookmark_delete">Seleziona i segnalibri da eliminare</string>
+    <string name="choose_bookmark_play">Seleziona un segnalibro da riprodurre</string>
+    <string name="add_bookmark">Aggiungi segnalibro</string>
+    <string name="player1desc">lettore 1</string>
+    <string name="player2desc">lettore 2</string>
+    <string name="player3desc">lettore 3</string>
+    <string name="player4desc">lettore 4</string>
+    <string name="disclamer_title">Attenzione</string>
+    <string name="disclamer_body">Stai per visitare un sito esterno che contiene link aggiunti dagli utenti. L\'app non controlla i contenuti, la disponibilità o la conformità legale. Utilizzare a proprio rischio. Continuare?</string>
+    <string name="find_links_in_file">Aggiungere i link trovati nel file?</string>
+    <string name="not_find_links_in_file">Nessun link trovato</string>
+    <string name="check_all_bookmark_for_del">Tutti</string>
+    <string name="not_available_yet">Questa funzione non è ancora disponibile</string>
+    <string name="not_find_links_in_file_rules"><![CDATA[<br>Impossibile trovare link nel file specificato.<br>
+I link nel file devono essere scritti nel formato:<br><br><font color = "#006064">
+Nome del canale<br>
+Link<br>
+Nome del canale<br>
+Link<br>
+Nome del canale<br>
+Link</font><br><br>
+Oppure nel formato standard m3u<br>]]></string>
+    <string name="errors_del_videos">Si sono verificati molti errori durante l\'eliminazione delle vecchie registrazioni.</string>
+    <string name="set_del_file_period1">Elimina automaticamente i file dalla cartella del lettore selezionato</string>
+    <string name="set_del_file_period2">dopo un certo numero di giorni.</string>
+    <string name="set_del_file_period0">Imposta il periodo di eliminazione dei file.</string>
+    <string name="copied_text">Copiato.</string>
+    <string name="empty_visual_record_dir">Cartella delle registrazioni</string>
+    <string name="send_link_to_dev"><![CDATA[<br><br>Invia questi link funzionanti allo sviluppatore per migliorare l\'app.<br>
+<font color = "#FF1744">Promemoria: non inviare link con diritti di amministratore.</font><br>]]></string>
+    <string name="ads_button_text">Consenti annunci personalizzati (condividi ID pubblicitario)</string>
+    <string name="skip_start_chekbox_text">Salta questa schermata all\'avvio</string>
+    <string name="hide_scale_chekbox_text">Nascondi il risultato della scala</string>
+    <string name="privacy_checkbox">Confermo di aver letto e accettato i termini dell\'Informativa sulla privacy.</string>
+    <string name="ad_id_title">Impostazioni degli annunci visualizzati</string>
+    <string name="ad_id_allow">Consenti</string>
+    <string name="ad_id_turn_off">Disattiva</string>
+    <string name="ad_id_text"><![CDATA[<br><br>Utilizziamo una rete pubblicitaria per visualizzare gli annunci.<br><br>
+La rete pubblicitaria può raccogliere dati, incluso l\'identificativo pubblicitario del tuo dispositivo, per fornire annunci personalizzati.<br><br>
+Puoi consentire o disabilitare la personalizzazione degli annunci.<br>< br>
+ Se disattivi la personalizzazione, ti mostreremo solo annunci non personalizzati.<br><br>]]></string>
+
+
+</resources>

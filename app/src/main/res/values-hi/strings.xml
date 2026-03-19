@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="play_btn_desc">चलाएँ</string>
+    <string name="record_btn_desc">रिकॉर्ड</string>
+    <string name="add_bookmark_btn_desc">बुकमार्क जोड़ें</string>
+    <string name="remove_bookmark_btn_desc">बुकमार्क हटाएँ</string>
+    <string name="clear_files_btn_desc">फ़ाइलें साफ़ करें</string>
+    <string name="clear_files_path_desc">साफ़ की जाने वाली फ़ाइलों का पथ</string>
+    <string name="clear_files_plus_btn_desc">फ़ाइलों की संख्या बढ़ाएँ</string>
+    <string name="clear_files_minus_btn_desc">फ़ाइलों की संख्या घटाएँ</string>
+    <string name="clear_files_value_desc">फ़ाइलें हटाएँ इतने दिनों बाद</string>
+    <string name="channel_name">चैनल का नाम</string>
+    <string name="link">लिंक</string>
+    <string name="dialog_empty_input">&#x1F53A;</string>
+    <string name="okey">ठीक है</string>
+    <string name="cancel">रद्द करें</string>
+    <string name="delete">हटाएँ</string>
+    <string name="mute">मौन</string>
+    <string name="falied_open_link">लिंक चलाने में विफल</string>
+    <string name="falied_link_format">असमर्थित लिंक प्रारूप</string>
+    <string name="choose_bookmark_delete">हटाने के लिए बुकमार्क चुनें</string>
+    <string name="choose_bookmark_play">चलाने के लिए बुकमार्क चुनें</string>
+    <string name="add_bookmark">बुकमार्क जोड़ें</string>
+    <string name="player1desc">प्लेयर 1</string>
+    <string name="player2desc">प्लेयर 2</string>
+    <string name="player3desc">प्लेयर 3</string>
+    <string name="player4desc">प्लेयर 4</string>
+    <string name="disclamer_title">सावधान</string>
+    <string name="disclamer_body">आप एक बाहरी वेबसाइट पर जा रहे हैं जिसमें उपयोगकर्ताओं द्वारा जोड़े गए लिंक हैं। ऐप इनकी सामग्री, उपलब्धता या कानूनी अनुपालन को नियंत्रित नहीं करता है। अपने जोखिम पर उपयोग करें। जारी रखें?</string>
+    <string name="find_links_in_file">फ़ाइल में पाए गए लिंक जोड़ें?</string>
+    <string name="not_find_links_in_file">कोई लिंक नहीं मिला</string>
+    <string name="check_all_bookmark_for_del">सभी</string>
+    <string name="not_available_yet">यह सुविधा अभी उपलब्ध नहीं है</string>
+    <string name="not_find_links_in_file_rules"><![CDATA[<br>निर्दिष्ट फ़ाइल में लिंक नहीं मिले।<br>
+फ़ाइल में लिंक इस प्रारूप में होने चाहिए:<br><br><font color = "#006064">
+चैनल का नाम<br>
+लिंक<br>
+चैनल का नाम<br>
+लिंक<br>
+चैनल का नाम<br>
+लिंक</font><br><br>
+या मानक m3u प्रारूप में<br>]]></string>
+    <string name="errors_del_videos">पुरानी रिकॉर्डिंग हटाते समय कई त्रुटियाँ हुईं।</string>
+    <string name="set_del_file_period1">चयनित प्लेयर की फ़ोल्डर से फ़ाइलें स्वचालित रूप से हटाएँ</string>
+    <string name="set_del_file_period2">निर्धारित दिनों के बाद।</string>
+    <string name="set_del_file_period0">फ़ाइल हटाने की अवधि सेट करें।</string>
+    <string name="copied_text">कॉपी किया गया।</string>
+    <string name="empty_visual_record_dir">रिकॉर्डिंग फ़ोल्डर</string>
+    <string name="send_link_to_dev"><![CDATA[<br><br>ऐप को ठीक करने के लिए ये कार्यशील लिंक डेवलपर को भेजें।<br>
+<font color = "#FF1744">अनुस्मारक: व्यवस्थापक अधिकारों वाले लिंक न भेजें।</font><br>]]></string>
+    <string name="ads_button_text">व्यक्तिगत विज्ञापनों की अनुमति दें (विज्ञापन आईडी साझा करें)</string>
+    <string name="skip_start_chekbox_text">प्रारंभ में इस स्क्रीन को छोड़ें</string>
+    <string name="hide_scale_chekbox_text">स्केल परिणाम छिपाएं</string>
+    <string name="privacy_checkbox">मैं पुष्टि करता/करती हूँ कि मैंने गोपनीयता नीति की शर्तें पढ़ ली हैं और उनसे सहमत हूँ।</string>
+    <string name="ad_id_title">प्रदर्शित विज्ञापन सेटिंग्स</string>
+    <string name="ad_id_allow">अनुमति दें</string>
+    <string name="ad_id_turn_off">बंद करें</string>
+    <string name="ad_id_text"><![CDATA[<br><br>हम विज्ञापन प्रदर्शित करने के लिए एक विज्ञापन नेटवर्क का उपयोग करते हैं।<br><br>
+विज्ञापन नेटवर्क आपके डिवाइस का विज्ञापन पहचानकर्ता सहित डेटा एकत्र कर सकता है, ताकि व्यक्तिगत विज्ञापन दिखाए जा सकें।<br><br>
+आप अनुमति दे सकते हैं या निष्क्रिय कर सकते हैं विज्ञापनों की व्यक्तिगतकरण।<br><br>
+यदि आप व्यक्तिगतकरण को निष्क्रिय करते हैं, तो हम केवल गैर-व्यक्तिगत विज्ञापन दिखाएंगे।<br><br>]]></string>
+
+
+</resources>
