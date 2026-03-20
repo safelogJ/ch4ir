@@ -74,26 +74,6 @@ public class AppController extends Application {
     }
 
     public Map<String, Content> getStreamLinks() {
-        //  if (mStreamLinks.isEmpty()) {
-       //    mStreamLinks.put("Dota247", buildContentFromLink("Dota247", "https://www.twitch.tv/dotatv247"));
-//
-////
-//          mStreamLinks.put("reefandchill", buildContentFromLink("reefandchill", "https://www.twitch.tv/reefandchill"));
-//        mStreamLinks.put("NTV SERIAL", buildContentFromLink("NTV SERIAL", "https://cdn.ntv.ru/th_serial/playlist.m3u8"));
-//        mStreamLinks.put("ул. Рабочая д. 5/14",  buildContentFromLink("ул. Рабочая д. 5/14", "rtsp://demo:demo@89.179.77.65:5552/RVi/1/2"));
-//        mStreamLinks.put("Детское кино", buildContentFromLink("Детское кино", "https://autopilot.catcast.tv/content/38720/index.m3u8"));
-//        mStreamLinks.put("paramount", buildContentFromLink("paramount", "https://v-tv.catcast.tv/content/43242/index.m3u8"));
-
-
-
-        //     mStreamLinks.put("TVFormula", buildContentFromLink("TVFormula", "https://tv.cdn.xsg.ge/c4635/TVFormula/playlist.m3u8"));
-      //       mStreamLinks.put("Музыка кино", buildContentFromLink("Музыка кино", "https://kino-1.catcast.tv/content/37739/index.m3u8"));
-
-//        mStreamLinks.put("ул. Арматурная д. 10/16, камера №1", buildContentFromLink("ул. Арматурная д. 10/16, камера №1", "rtsp://demo:demo@89.179.77.65:5550/RVi/1/2"));
-//           mStreamLinks.put("ул. Арматурная д. 10/16 камера №2", buildContentFromLink("ул. Арматурная д. 10/16 камера №2", "rtsp://demo:demo@89.179.77.65:5551/RVi/1/2"));
-//           mStreamLinks.put("ул. Арматурная д. 34В", buildContentFromLink("ул. Арматурная д. 34В", "rtsp://demo:demodemo11@89.179.77.65:5554/cam/realmonitor?channel=1&;subtype=1"));
-
-       //    }
         return mStreamLinks;
     }
 
