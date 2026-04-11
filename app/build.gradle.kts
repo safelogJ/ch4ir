@@ -13,8 +13,8 @@ configure <ApplicationExtension> {
         applicationId = "com.safelogj.ch4ir"
         minSdk = 23
         targetSdk = 36
-        versionCode = 86
-        versionName = "2.5.7 ch4ir"
+        versionCode = 87
+        versionName = "2.5.8 ch4ir"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }

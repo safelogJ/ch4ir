@@ -2,6 +2,9 @@ package com.safelogj.ch4ir;
 
 import android.app.Application;
 import android.os.Build;
+import android.security.keystore.KeyGenParameterSpec;
+import android.security.keystore.KeyProperties;
+import android.util.Base64;
 import android.util.Log;
 
 import androidx.media3.common.util.UnstableApi;
@@ -17,11 +20,19 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
+import java.security.InvalidKeyException;
+import java.security.KeyStore;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+
+import javax.crypto.Cipher;
+import javax.crypto.KeyGenerator;
+import javax.crypto.SecretKey;
+import javax.crypto.spec.GCMParameterSpec;
 
 
 @UnstableApi
@@ -46,6 +57,12 @@ public class AppController extends Application {
     private static final String DEFAULT_PRIVACY = "https://github.com/safelogJ/ch4ir/tree/main/privacy";
     private static final String DEFAULT_INFO = "https://github.com/safelogJ/ch4ir/tree/main";
     private static final String LINE_BREAK = "\n";
+    private static final String KEY_ALIAS = "MikrotikRouterKeyAlias";
+    private static final String ANDROID_KEYSTORE = "AndroidKeyStore";
+    private static final String TRANSFORMATION = "AES/GCM/NoPadding";
+    private static final int GCM_TAG_LENGTH = 16; // Длина аутентификационного тега в байтах (128 бит)
+    private static final int AES_KEY_SIZE = 256;
+    private static final String ENCRYPTED_DATA_KEY = "encryptedData";
     private final ExoRecorder[] exoPlayers = new ExoRecorder[PLAYERS_COUNT];
     private final Map<String, Content> mStreamLinks = new HashMap<>();
     private final ExecutorService mAppExecutorWriteSettings = Executors.newSingleThreadExecutor();
@@ -55,6 +72,7 @@ public class AppController extends Application {
     private boolean isHideScale;
     private int privacyId;
     private boolean hasRedirectedOnce;
+    private Cipher mCipher;
 
     public void writeSettingsToFile() {
         mAppExecutorWriteSettings.execute(this::writeStreamLinksAndSettings);
@@ -179,7 +197,7 @@ public class AppController extends Application {
         File streamLinksFile = new File(streamLinksDir, LINKS_JSON);
 
         try (FileWriter file = new FileWriter(streamLinksFile)) {
-            JSONObject jsonObject = new JSONObject();
+            JSONObject rootJson = new JSONObject();
             JSONObject linksJson = new JSONObject();
 
             for (Map.Entry<String, Content> entry : mStreamLinks.entrySet()) {
@@ -201,12 +219,23 @@ public class AppController extends Application {
                 linksJson.put(entry.getKey(), contentJson);
             }
 
-            jsonObject.put(STREAM_LINKS, linksJson);
-            jsonObject.put(SKIP_START, isSkipStart);
-            jsonObject.put(HIDE_SCALE, isHideScale);
-            jsonObject.put(PRIVACY_ID, privacyId);
+            rootJson.put(STREAM_LINKS, linksJson);
+            rootJson.put(SKIP_START, isSkipStart);
+            rootJson.put(HIDE_SCALE, isHideScale);
+            rootJson.put(PRIVACY_ID, privacyId);
 
-            file.write(jsonObject.toString(4));
+
+            // 2. Шифрование всего JSON-контента
+            String rawJsonString = rootJson.toString();
+            byte[] rawJsonBytes = rawJsonString.getBytes(StandardCharsets.UTF_8);
+            byte[] encryptedCombinedBytes = encrypt(rawJsonBytes);
+            String encryptedBase64 = Base64.encodeToString(encryptedCombinedBytes, Base64.NO_WRAP);
+
+            // 3. Создание JSON-оболочки для записи в файл
+            JSONObject fileWrapper = new JSONObject();
+            fileWrapper.put(ENCRYPTED_DATA_KEY, encryptedBase64);
+
+            file.write(fileWrapper.toString(4));
 
         } catch (Exception e) {
             Log.d(LOG_TAG, "error write json file: " + e.getMessage());
@@ -216,13 +245,13 @@ public class AppController extends Application {
     private void readStreamLinksAndSettings() {
         File streamLinksDir = new File(getFilesDir(), LINKS);
         File streamLinksFile = new File(streamLinksDir, LINKS_JSON);
-        StringBuilder jsonString = new StringBuilder();
+        StringBuilder fileContent = new StringBuilder();
 
         try (FileReader reader = new FileReader(streamLinksFile)) {
             char[] buffer = new char[1024];
             int length;
             while ((length = reader.read(buffer)) != -1) {
-                jsonString.append(buffer, 0, length);
+                fileContent.append(buffer, 0, length);
             }
         } catch (IOException e) {
             Log.d(LOG_TAG, "error read settings file: " + e.getMessage());
@@ -230,8 +259,16 @@ public class AppController extends Application {
         }
 
         try {
-            JSONObject jsonObject = new JSONObject(jsonString.toString());
-            JSONObject linksJson = jsonObject.getJSONObject(STREAM_LINKS);
+            JSONObject fileWrapper = new JSONObject(fileContent.toString());
+            String encryptedBase64 = fileWrapper.getString(ENCRYPTED_DATA_KEY);
+
+            // Декодирование и дешифрование
+            byte[] combinedBytes = Base64.decode(encryptedBase64, Base64.DEFAULT); // Base64.DEFAULT безопасно для декодирования
+            byte[] decryptedBytes = decrypt(combinedBytes);
+            String rawJsonString = new String(decryptedBytes, StandardCharsets.UTF_8);
+
+            JSONObject rootJson = new JSONObject(rawJsonString);
+            JSONObject linksJson = rootJson.getJSONObject(STREAM_LINKS);
 
             for (Iterator<String> it = linksJson.keys(); it.hasNext(); ) {
                 String key = it.next();
@@ -255,14 +292,135 @@ public class AppController extends Application {
                 content.setLinkType(linkType);
                 mStreamLinks.put(key, content);
             }
-            isSkipStart = jsonObject.optBoolean(SKIP_START, false);
-            isHideScale = jsonObject.optBoolean(HIDE_SCALE, false);
-            privacyId = jsonObject.optInt(PRIVACY_ID, 0);
+            isSkipStart = rootJson.optBoolean(SKIP_START, false);
+            isHideScale = rootJson.optBoolean(HIDE_SCALE, false);
+            privacyId = rootJson.optInt(PRIVACY_ID, 0);
 
 
-        } catch (JSONException e) {
+        } catch (Exception e) {
+            readStreamLinksAndSettingsOld();
+            writeStreamLinksAndSettings();
             Log.d(LOG_TAG, "error read json data: " + e.getMessage());
         }
+    }
+
+    private void readStreamLinksAndSettingsOld() {
+        File streamLinksDir = new File(getFilesDir(), LINKS);
+        File streamLinksFile = new File(streamLinksDir, LINKS_JSON);
+        StringBuilder fileContent = new StringBuilder();
+
+        try (FileReader reader = new FileReader(streamLinksFile)) {
+            char[] buffer = new char[1024];
+            int length;
+            while ((length = reader.read(buffer)) != -1) {
+                fileContent.append(buffer, 0, length);
+            }
+        } catch (IOException e) {
+            Log.d(LOG_TAG, "error read settings file: " + e.getMessage());
+            return;
+        }
+
+        try {
+            JSONObject rootJson = new JSONObject(fileContent.toString());
+            JSONObject linksJson = rootJson.getJSONObject(STREAM_LINKS);
+
+            for (Iterator<String> it = linksJson.keys(); it.hasNext(); ) {
+                String key = it.next();
+                JSONObject contentJson = linksJson.getJSONObject(key);
+
+                String title = contentJson.optString(CONTENT_TITLE, EMPTY_STRING);
+                String userLink = contentJson.optString(CONTENT_USER_LINK, EMPTY_STRING);
+                String realLink = contentJson.optString(CONTENT_REAL_LINK, EMPTY_STRING);
+                String info = contentJson.optString(CONTENT_INFO, EMPTY_STRING);
+                String channel = contentJson.optString(CONTENT_CHANNEL, EMPTY_STRING);
+                String userAgent = contentJson.optString(CONTENT_USER_AGENT, EMPTY_STRING);
+                int linkType = contentJson.optInt(CONTENT_LINK_TYPE, 0);
+
+                Content content = new Content();
+                content.setTitle(title);
+                content.setUserLink(userLink);
+                content.setRealLink(realLink);
+                content.setInfo(info);
+                content.setChannel(channel);
+                content.setUserAgent(userAgent);
+                content.setLinkType(linkType);
+                mStreamLinks.put(key, content);
+            }
+            isSkipStart = rootJson.optBoolean(SKIP_START, false);
+            isHideScale = rootJson.optBoolean(HIDE_SCALE, false);
+            privacyId = rootJson.optInt(PRIVACY_ID, 0);
+
+
+        } catch (Exception e) {
+            Log.d(LOG_TAG, "error read json data: " + e.getMessage());
+        }
+    }
+
+    private SecretKey getOrCreateSecretKey() throws Exception {
+        KeyStore keyStore = KeyStore.getInstance(ANDROID_KEYSTORE);
+        keyStore.load(null);
+
+        // Попытка получить существующий ключ
+        if (keyStore.containsAlias(KEY_ALIAS)) {
+            KeyStore.SecretKeyEntry entry = (KeyStore.SecretKeyEntry) keyStore.getEntry(KEY_ALIAS, null);
+            return entry.getSecretKey();
+        }
+
+        // Если ключа нет, создаем новый (Требуется API 23+ для KeyGenParameterSpec)
+        KeyGenerator keyGenerator = KeyGenerator.getInstance(
+                KeyProperties.KEY_ALGORITHM_AES, ANDROID_KEYSTORE);
+
+        // Настройка параметров: AES/GCM/NoPadding
+        keyGenerator.init(new KeyGenParameterSpec.Builder(KEY_ALIAS,
+                KeyProperties.PURPOSE_ENCRYPT | KeyProperties.PURPOSE_DECRYPT)
+                .setBlockModes(KeyProperties.BLOCK_MODE_GCM)
+                .setEncryptionPaddings(KeyProperties.ENCRYPTION_PADDING_NONE)
+                .setKeySize(AES_KEY_SIZE)
+                .build());
+
+        return keyGenerator.generateKey();
+
+    }
+
+    private byte[] encrypt(byte[] dataBytes) throws Exception {
+        SecretKey secretKey = getOrCreateSecretKey();
+        if (mCipher == null) {
+            mCipher = Cipher.getInstance(TRANSFORMATION);
+        }
+        mCipher.init(Cipher.ENCRYPT_MODE, secretKey);
+
+        byte[] iv = mCipher.getIV();
+        byte[] encryptedData = mCipher.doFinal(dataBytes);
+        byte[] combined = new byte[1 + iv.length + encryptedData.length];
+        combined[0] = (byte) iv.length; // Сохраняем длину IV в первом байте
+        System.arraycopy(iv, 0, combined, 1, iv.length); // Копируем IV начиная со второго байта
+        System.arraycopy(encryptedData, 0, combined, 1 + iv.length, encryptedData.length); // Копируем данные
+        return combined;
+    }
+
+    private byte[] decrypt(byte[] combinedBytes) throws Exception {
+        // Минимальная длина: 1 байт (длина IV) + 1 байт (IV) + 16 байт (GCM Tag) = 18 байт
+        if (combinedBytes.length < 1 + GCM_TAG_LENGTH) {
+            throw new InvalidKeyException("Combined data too short to contain IV length and GCM Tag.");
+        }
+
+        int ivLength = combinedBytes[0] & 0xFF; // Получаем фактическую длину IV из первого байта
+        // Проверяем, достаточно ли данных для IV и GCM Tag
+        if (combinedBytes.length < 1 + ivLength + GCM_TAG_LENGTH) {
+            throw new InvalidKeyException("IV length leads to combined data too short for GCM Tag.");
+        }
+        // Извлекаем IV
+        byte[] iv = Arrays.copyOfRange(combinedBytes, 1, 1 + ivLength);
+        // Извлекаем зашифрованные данные (начинаются после байта длины и IV)
+        byte[] encryptedData = Arrays.copyOfRange(combinedBytes, 1 + ivLength, combinedBytes.length);
+
+        SecretKey secretKey = getOrCreateSecretKey();
+        mCipher = Cipher.getInstance(TRANSFORMATION);
+        // GCM_TAG_LENGTH * 8, так как длина тега указывается в битах (16 байт * 8 = 128 бит)
+        GCMParameterSpec spec = new GCMParameterSpec(GCM_TAG_LENGTH * 8, iv);
+
+        mCipher.init(Cipher.DECRYPT_MODE, secretKey, spec);
+        return mCipher.doFinal(encryptedData);
     }
 
 }
