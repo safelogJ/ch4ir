@@ -22,3 +22,17 @@ Play up to four streams simultaneously.
 
 ### License
 This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) and [NOTICE](NOTICE) files for details.
+
+### ❤️ Support
+
+* Ozon : 2204 2402 5165 6593
+* VISA : 4138 4601 5101 6667
+
+* BTC (Bitcoin)  bc1q5xyw4d0rnue4e67dfme306dmq32tcqcfp4nldp
+* ETH (Ethereum) 0xa3ae9d297c6dbc4b6db1cfc6d056ed86ca3209e6
+* USDT (Ethereum) 0xa3ae9d297c6dbc4b6db1cfc6d056ed86ca3209e6
+* USDC (Ethereum) 0xa3ae9d297c6dbc4b6db1cfc6d056ed86ca3209e6
+* SOL (Solana) 4S8eZhQoKpSGfKdo8Bo8KYJR5F66xjAmanJfnvbjKgXB
+* TWT (BNB Smart Chain) 0xa3ae9d297c6dbc4b6db1cfc6d056ed86ca3209e6
+* BNB (BNB Smart Chain) 0xa3ae9d297c6dbc4b6db1cfc6d056ed86ca3209e6
+___
